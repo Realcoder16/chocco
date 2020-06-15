@@ -1,0 +1,84 @@
+.section__title--order{
+  margin-top: 86px;
+  color: #365a49;
+  margin-bottom: 54px;
+}
+
+
+.order-section{
+  position: relative;
+  background-color: #d2ddd9;
+  background: url('../decor/pattern\ delivery.png');
+  z-index: 50;
+  &:before{
+    content: url("../decor/blueberry\ order.png");
+    bottom: 10%;
+    left: 1%;
+    position: absolute;
+  }
+  &:after{
+    content: url("../decor/leave\ order.png");
+    right: 0;
+    bottom: 10%;
+    position: absolute;
+  }
+}
+
+
+.form {
+  display: flex;
+  flex:1;
+}
+
+
+
+.form__col{
+    
+    margin-right: 20px;
+    flex: 1;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  
+}
+
+.form__row{
+  display: flex;
+  margin-bottom: 18px;
+
+}
+
+.form__block{
+  flex: 1;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__input{
+  width: 100%;
+  height: 59px;
+  border: none;
+  padding: 18px 11px;
+  border: solid 3px transparent;
+  //border: solid 3px 
+
+  &:focus {
+    outline: none;
+    border-color: #dee2bd;
+  }
+
+  &--textarea{
+    height: 180px;
+    resize: none;
+  }
+}
+
+
+.form__title{
+  color: #365a49;
+  margin-bottom: 6px;
+}

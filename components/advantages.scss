@@ -1,0 +1,24 @@
+.advantages__list{
+  display: flex;
+}
+
+.advantages__item{
+ margin-right: 46px;
+ display: flex;
+ align-items: center;
+
+ &:last-child {
+   margin-right: 0;
+ }
+.icon {
+  width: 45px;
+  margin-right: 7px;
+}
+
+}
+
+.advantages__text{
+  font-size: 16px;
+  max-width: 84px;
+}
+

@@ -1,0 +1,19 @@
+.interactive-avatar{
+  width: 80px;
+height: 80px;
+}
+
+.interactive-avatar__img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden; 
+   border: 6px solid transparent;
+
+
+&--active {
+  border-color: 6px solid #0f5a47;
+}
+
+}
