@@ -11,9 +11,9 @@
 <body>
   <div class="wrapper main-page-wrapper">
 
-    <div class="hero">
+    <section class="hero">
       <div class="container hero__container">
-        <header class="header">
+                <header class="header">
 
           <div class="logo">
             <a href="./" class="logo__link">
@@ -68,6 +68,8 @@
             </div>
             <a href="#" class="button button--white">Заказать</a>
           </div>
+
+          <div class="chocco"><img src="./decor/батончики.png" alt="" class="chocco__img"></div>
         </section>
 
 
@@ -101,8 +103,9 @@
 
 
       </div>
-    </div>
-    <div style="height: 113px"></div>
+    </section>
+
+
 
     <section class="section benefit-section">
       <div class="container container--why">
@@ -118,8 +121,8 @@
                 <img src="./icons/1.svg" alt="" class="benefit__icon">
               </div>
             </div>
-            <h3 class="benefit__subtitle">Полезно</h3>
             <div class="benefit__text">
+              <h3>Полезно</h3>
               <p>Натуральность - ключевое качество
                 нашей продукции. Мы используем
                 только природные ингредиенты.</p>
@@ -131,12 +134,13 @@
                 <img src="./icons/3.svg" alt="" class="benefit__icon">
               </div>
             </div>
-            <h3 class="benefit__subtitle">Вкусно</h3>
             <div class="benefit__text">
+              <h3>Вкусно</h3>
               <p>Нежный, ненавязчивый, изысканный –
                 так клиенты описывают вкусовые
                 качества наших батончиков.</p>
             </div>
+
           </li>
           <li class="benefits__item benefit">
             <div class="benefit__image">
@@ -144,34 +148,39 @@
                 <img src="./icons/2.svg" alt="" class="benefit__icon">
               </div>
             </div>
-            <h3 class="benefit__subtitle">Питательно</h3>
+
             <div class="benefit__text">
+              <h3>Питательно</h3>
               <p>Высокое содержание качественного
                 белка, а также всех необходимых
                 витаминов и минералов.</p>
             </div>
           </li>
         </ul>
-
       </div>
+
     </section>
 
+  
 
-    <section class="section section--review">
 
-      <div class="container">
-        <h2 class="section__title section__title--review">Отзывы</h2>
-        <div class="reviews">
-          <div class="reviews__display">
-            <div class="reviews__display-inner">
-              <div class="reviews__avatar">
-                <img src="./reviews/photo1.jpg" alt="black hair girl" class="reviews__avatar-img">
-              </div>
 
-              <article class="reviews__content">
+  <section class="section section--review">
+
+    <div class="container">
+      <h2 class="section__title section__title--review">Отзывы</h2>
+      <div class="reviews">
+        <div class="reviews__display">
+          <div class="reviews__display-inner">
+            <div class="reviews__avatar">
+              <img src="./reviews/photo1.jpg" alt="black hair girl" class="reviews__avatar-img">
+            </div>
+
+            <ul class="reviews__content">
+              <li class="reviews__items">
                 <h3 class="reviews__subtitle">Лучший перекус</h3>
                 <div class="reviews__text">
-                  <p>Я ем  малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за
+                  <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за
                     компьютером
                     и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под
                     рукой. Это приятно
@@ -179,167 +188,193 @@
                 </div>
 
                 <div class="reviews__author">Алёна Хмельницкая</div>
-
-
-              </article>
-            </div>
-            <ul class="reviews__switcher">
-              <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                <a href="" class="interactive-avatar__link">
-                  <img src="./reviews/photo1.jpg" alt="black hair girl" class="interactive-avatar__img">
-                </a>
               </li>
 
-              <li class="reviews__switcher-item interactive-avatar">
-                <a href="" class="interactive-avatar__link">
-                  <img src="./reviews/photo3.jpg" alt="red hair girl" class="interactive-avatar__img">
-                </a>
+              <li class="reviews__items">
+                <h3 class="reviews__subtitle">Лучшие батончики премиум уровня</h3>
+                <div class="reviews__text">
+                  <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как
+                    говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же,
+                    кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс,
+                    чем минус. </p>
+                </div>
+
+                <div class="reviews__author">Мария Орлова</div>
               </li>
 
-              <li class="reviews__switcher-item interactive-avatar">
-                <a href="" class="interactive-avatar__link">
-                  <img src="./reviews/photo2.jpg" alt="boy in cap" class="interactive-avatar__img">
-                </a>
-              </li>
+              <li class="reviews__items">
+                <h3 class="reviews__subtitle">Идеально подходят для спортсменов</h3>
+                <div class="reviews__text">
+                  <p>ЯПосле тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно
+                    доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю
+                    за этот качественный и экологичный продукт. </p>
+                </div>
 
+                <div class="reviews__author">Вадим Грачев</div>
+              </li>
             </ul>
+
+
+
+
+          </div>
+          <ul class="reviews__switcher">
+            <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
+              <a href="" class="interactive-avatar__link">
+                <img src="./reviews/photo1.jpg" alt="black hair girl" class="interactive-avatar__img">
+              </a>
+            </li>
+
+            <li class="reviews__switcher-item interactive-avatar">
+              <a href="" class="interactive-avatar__link">
+                <img src="./reviews/photo3.jpg" alt="red hair girl" class="interactive-avatar__img">
+              </a>
+            </li>
+
+            <li class="reviews__switcher-item interactive-avatar">
+              <a href="" class="interactive-avatar__link">
+                <img src="./reviews/photo2.jpg" alt="boy in cap" class="interactive-avatar__img">
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section order-section">
+    <div class="container">
+
+      <div class="section__title section__title--order">Закажите доставку</div>
+      <form action="" class="form">
+        <div class="form__col">
+
+          <div class="form__row">
+            <label for="" class="form__block">
+              <div class="form__title">Имя</div>
+              <input type="text" class="form__input">
+            </label>
+
+            <label for="" class="form__block">
+              <div class="form__title">Телефон</div>
+              <input type="tel" class="form__input">
+            </label>
+
+          </div>
+
+          <div class="form__row">
+            <label for="" class="form__block">
+              <div class="form__title">Улица</div>
+              <input type="text" class="form__input">
+            </label>
+
+          </div>
+
+          <div class="form__row">
+            <label for="" class="form__block">
+              <div class="form__title">Дом</div>
+              <input type="text" class="form__input">
+            </label>
+
+            <label for="" class="form__block">
+              <div class="form__title">Корпус</div>
+              <input type="text" class="form__input">
+            </label>
+
+
+            <label for="" class="form__block">
+              <div class="form__title">Квартира</div>
+              <input type="text" class="form__input">
+            </label>
+
+            <label for="" class="form__block">
+              <div class="form__title">Этаж</div>
+              <input type="text" class="form__input">
+            </label>
+
+          </div>
+        </div>
+
+
+        <div class="form__col">
+
+          <div class="form__row">
+            <label for="" class="form__block">
+              <div class="form__title">Комментарии</div>
+              <textarea type="text" class="form__input form__input--textarea">
+                      </textarea>
+
+            </label>
+          </div>
+
+
+          <div class="form__controls">
+            <label class="radio">
+              <input type="radio" name="option" class="radio__elem">
+              <div class="radio__visible"></div>
+              <div class="radio__title">Потребуется сдача</div>
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="option" class="radio__elem">
+              <div class="radio__visible"></div>
+              <div class="radio__title">Оплатить по карте</div>
+            </label>
+
+
+
+
+            <label class="radio radio--checkbox">
+              <input type="checkbox" class="radio__elem">
+              <div class="radio__visible"></div>
+              <div class="radio__title">Не перезванивать</div>
+            </label>
+
+          </div>
+
+
+
+
+
+
+
+
+          <div class="form__buttons">
+
+            <button type="submit" class="button button--theme--green">Заказать</button>
+            <button type="reset" class="button button--theme--transparent">Очистить</button>
           </div>
 
         </div>
-      </div>
-    </section>
+
+      </form>
+    </div>
 
 
-    <section class="section order-section">
-      <div class="container">
-
-        <div class="section__title section__title--order">Закажите доставку</div>
-        <form action="" class="form">
-          <div class="form__col">
-
-            <div class="form__row">
-              <label for="" class="form__block">
-                <div class="form__title">Имя</div>
-                <input type="text" class="form__input">
-              </label>
-
-              <label for="" class="form__block">
-                <div class="form__title">Телефон</div>
-                <input type="text" class="form__input">
-              </label>
-
-            </div>
-
-            <div class="form__row">
-              <label for="" class="form__block">
-                <div class="form__title">Улица</div>
-                <input type="text" class="form__input">
-              </label>
-
-            </div>
-
-            <div class="form__row">
-              <label for="" class="form__block">
-                <div class="form__title">Дом</div>
-                <input type="text" class="form__input">
-              </label>
-
-              <label for="" class="form__block">
-                <div class="form__title">Корпус</div>
-                <input type="text" class="form__input">
-              </label>
+  </section>
 
 
-              <label for="" class="form__block">
-                <div class="form__title">Квартира</div>
-                <input type="text" class="form__input">
-              </label>
+  <nav class="fixed-menu">
 
-              <label for="" class="form__block">
-                <div class="form__title">Этаж</div>
-                <input type="text" class="form__input">
-              </label>
+    <ul class="fixed-menu__list">
+      <li class="fixed-munu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
+      <li class="fixed-munu__item"><a href="" class="fixed-menu__link"></a></li>
+      <li class="fixed-munu__item"><a href="" class="fixed-menu__link"></a></li>
+      <li class="fixed-munu__item"><a href="" class="fixed-menu__link"></a></li>
+      <li class="fixed-munu__item"><a href="" class="fixed-menu__link"></a></li>
+      <li class="fixed-munu__item"><a href="" class="fixed-menu__link"></a></li>
+      <li class="fixed-munu__item"><a href="" class="fixed-menu__link"></a></li>
+      <li class="fixed-munu__item"><a href="" class="fixed-menu__link"></a></li>
 
-            </div>
-          </div>
-
-
-          <div class="form__col">
-
-            <div class="form__row">
-              <label for="" class="form__block">
-                <div class="form__title">Комментарии</div>
-                <textarea type="text" class="form__input form__input--textarea">
-                      </textarea>
-
-              </label>
-            </div>
-
-
-            <div class="form__controls">
-              <label class="radio">
-                <input type="radio" name="option" class="radio__elem">
-                <div class="radio__visible"></div>
-                <div class="radio__title">Потребуется сдача</div>
-              </label>
-
-              <label class="radio">
-                <input type="radio" name="option" class="radio__elem">
-                <div class="radio__visible"></div>
-                <div class="radio__title">Оплатить по карте</div>
-              </label>
+    </ul>
 
 
 
 
-              <label class="radio radio--checkbox">
-                <input type="checkbox" class="radio__elem">
-                <div class="radio__visible"></div>
-                <div class="radio__title">Не перезванивать</div>
-              </label>
-
-            </div>
-
-
-
-
-
-
-
-
-            <div class="form__buttons">
-
-              <button type="submit" class="button button--theme--green">Заказать</button>
-              <button type="reset" class="button button--theme--transparent">Очистить</button>
-            </div>
-
-          </div>
-
-        </form>
-      </div>
-
-
-    </section>
-
-
-    <nav class="fixed-menu">
-
-      <ul class="fixed-menu__list">
-        <li class="fixed-munu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-munu__item"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-munu__item"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-munu__item"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-munu__item"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-munu__item"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-munu__item"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-munu__item"><a href="" class="fixed-menu__link"></a></li>
-
-      </ul>
-
-
-
-
-    </nav>
+  </nav>
   </div>
 
 

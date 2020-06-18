@@ -1,6 +1,12 @@
 .interactive-avatar{
   width: 80px;
 height: 80px;
+
+&--active a img {
+  border: 6px solid #0f5a47;
+  
+ 
+}
 }
 
 .interactive-avatar__img{
@@ -10,10 +16,8 @@ height: 80px;
   border-radius: 50%;
   overflow: hidden; 
    border: 6px solid transparent;
+   &:hover{border: 6px solid #0f5a47;}
 
-
-&--active {
-  border-color: 6px solid #0f5a47;
-}
+   
 
 }

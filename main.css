@@ -105,7 +105,12 @@ img {
   justify-content: space-between;
   height: 100%;
   padding: 24px 0 45px;
-  background: url("../decor/батончики.png") right center/50% auto no-repeat;
+}
+
+.chocco {
+  position: absolute;
+  right: 23%;
+  top: 10%;
 }
 
 .promo__title {
@@ -220,6 +225,7 @@ img {
 
 .headline__title {
   margin-bottom: 11px;
+  margin-top: 113px;
 }
 
 .headline__text {
@@ -276,7 +282,7 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.benefit__subtitle {
+.benefit__text h3 {
   color: #000000;
   font-size: 27px;
   font-weight: 700;
@@ -330,11 +336,15 @@ img {
   margin-left: 20px;
 }
 
-.reviews__subtitle {
+.reviews__items h3 {
   font-size: 30px;
   font-weight: bold;
   color: #000000;
   margin-bottom: 22px;
+}
+
+.reviews__items:nth-child(1n+2) {
+  display: none;
 }
 
 .reviews__text {
@@ -372,9 +382,16 @@ img {
   top: 0;
 }
 
+.section--review {
+  margin-top: 69px;
+}
+
 .interactive-avatar {
   width: 80px;
   height: 80px;
+}
+.interactive-avatar--active a img {
+  border: 6px solid #0f5a47;
 }
 
 .interactive-avatar__img {
@@ -385,14 +402,14 @@ img {
   overflow: hidden;
   border: 6px solid transparent;
 }
-.interactive-avatar__img--active {
-  border-color: 6px solid #0f5a47;
+.interactive-avatar__img:hover {
+  border: 6px solid #0f5a47;
 }
 
 .section__title--order {
   margin-top: 86px;
   color: #365a49;
-  margin-bottom: 54px;
+  margin-bottom: 53px;
 }
 
 .order-section {

@@ -54,13 +54,17 @@
   margin-left: 20px;
 }
 
-.reviews__subtitle{
+.reviews__items h3{
   font-size: 30px;
   font-weight: bold;
   color: #000000;
-  margin-bottom: 22px;
+  margin-bottom: 22px;}
 
-}
+  .reviews__items:nth-child(1n+2){
+    display: none;
+  }
+
+
 
 .reviews__text{
   margin-bottom: 36px;
@@ -99,4 +103,9 @@
     right:0;
     top: 0;
   }
+}
+
+
+.section--review{
+  margin-top: 69px;
 }
