@@ -1,0 +1,31 @@
+.benefits{
+  display: flex;
+}
+
+.benefits__item{
+flex:1;
+padding: 0 3%;
+position: relative;
+
+&:before {
+  content: url("../decor/grey\ dotts.png");
+  position: absolute;
+  top: 43px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+
+&:last-child {
+  padding-right: 0;
+
+  &:before {
+    display: none;
+  }
+}
+
+&:first-child {
+  margin-left: -7.5%;
+}
+}
+

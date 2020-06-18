@@ -1,0 +1,44 @@
+.button {
+  padding: 18px 32px;
+  border-radius: 100px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1;
+  border: none;
+
+  &--white {
+    background: white;
+    color: $darkGreen
+  }
+
+  &:hover {
+
+    color: white;
+    background: $darkGreen;
+  }
+
+  &--theme--green {
+    background: $darkGreen;
+    color: #ffffff;
+
+    &:hover {
+      background: #ffffff;
+      color: $darkGreen;
+    }
+  }
+
+  &--theme--transparent {
+    color: #000000;
+    background: transparent;
+    text-transform: none;
+    
+
+    &:hover {
+      color: $darkGreen;
+      background: transparent;
+      
+    }
+  }
+
+}

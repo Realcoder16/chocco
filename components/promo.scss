@@ -1,0 +1,58 @@
+.hero {
+    background: url("../decor/узор.png") right bottom no-repeat;
+    background-color: $blue;
+    height: 100vh;
+    min-height: 650px;
+    color: white;
+    position: relative;
+
+
+&:before {
+  content: url('../decor/left\ leave.png');
+  position: absolute;
+  left: 5%;
+  bottom: -50px;
+}
+&:after {
+  content: url(../decor/berries.png);
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+}
+
+}
+.hero__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px 0 45px;
+  
+}
+
+.chocco{
+  position: absolute;
+  right: 23%;
+  top: 10%;
+}
+
+.promo__title{
+  font-size: 48px;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 23px;
+line-height: 1.1;
+}
+
+.promo__description{
+  font-size: 21px; 
+   padding-bottom: 32px;
+}
+
+.promo{
+  width: 43%;
+}
+
+
+
+  

@@ -1,0 +1,37 @@
+.section{
+  background-color: white;
+    height: 100vh;
+  min-height: 650px;
+ 
+  
+}
+
+.benefit-section{
+  background: url('../decor/grey\ leave.png') left top 57% no-repeat; 
+  position: relative;
+
+    &:after {
+    content: url('../decor/raspberry.png');
+    position: absolute;
+  left: 0;
+  bottom: -103px;
+  }
+}
+
+.container--why{
+  height: 100%;
+  position: relative;
+
+}
+
+.section__title{
+  font-size: 48px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;;
+}
+
+
+
