@@ -40,6 +40,8 @@
 .reviews__avatar{
   width: 254px;
   height: 260px;
+  margin-left: -47px;
+  
   
 }
 
@@ -52,6 +54,10 @@
 .reviews__content{
   flex:1;
   margin-left: 20px;
+}
+
+.reviews__items{
+  display: flex;
 }
 
 .reviews__items h3{
@@ -110,7 +116,7 @@
   margin-top: 69px;
 }
 
-.reviews__avatar-img:nth-child(1n+2){
+.reviews__avatar:nth-child(1n+2){
 
   display: none;
 
