@@ -109,3 +109,9 @@
 .section--review{
   margin-top: 69px;
 }
+
+.reviews__avatar-img:nth-child(1n+2){
+
+  display: none;
+
+}
