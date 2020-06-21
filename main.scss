@@ -1,5 +1,9 @@
 $containerWidth: 940px;
-$basefontsize: 18px;
+$baseFontSize: 18px;
+
+//breakpoints
+$tablets: 768px;
+$phones:480px;
 
 //color
 $blue: #61c4d9;
@@ -9,9 +13,11 @@ $darkGreen: #2e4e3f;
 $z-fixed-menu: 100;
 
 //setup
-@import "layout/base.scss";
+
 @import "layout/normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700;800&display=swap');
+@import "components/media.scss";
+@import "layout/base.scss";
 
 //components
 @import "components/promo.scss";
@@ -27,5 +33,6 @@ $z-fixed-menu: 100;
 @import "components/controls.scss";
 @import "components/button.scss";
 @import "components/fixed-menu.scss";
+
 
 

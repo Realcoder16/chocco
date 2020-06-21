@@ -1,13 +1,13 @@
 
 
 .section__title--review{
-  margin-bottom: 44px;
+  margin-bottom: rem(44px);
 }
 .reviews__display-inner{
   background: #f8faf9;
-  padding: 64px 45px 18px 36px;
+  padding: rem(64px) rem(45px) rem(18px) rem(36px);
   display: flex;
-  margin-bottom: 27px;
+  margin-bottom: rem(27px);
   position: relative;
   overflow: hidden;
 
@@ -22,12 +22,12 @@
 &:after{
   content: "";
   display: block;
-  width: 90px;
-  height: 90px;
+  width: rem(90px);
+  height: rem(90px);
   background: #fff;
   border-radius: 50%;
   position: absolute;
-  top: -65px;
+  top: rem(-65px);
   left: 50%;
   transform: translateX(-50%);
   
@@ -38,9 +38,9 @@
 
 
 .reviews__avatar{
-  width: 254px;
-  height: 260px;
-  margin-left: -47px;
+  width: rem(254px);
+  height: rem(260px);
+  margin-left: rem(-47px);
   
   
 }
@@ -53,7 +53,7 @@
 
 .reviews__content{
   flex:1;
-  margin-left: 20px;
+  margin-left: rem(20px);
 }
 
 .reviews__items{
@@ -61,10 +61,10 @@
 }
 
 .reviews__items h3{
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: bold;
   color: #000000;
-  margin-bottom: 22px;}
+  margin-bottom: rem(22px);}
 
   .reviews__items:nth-child(1n+2){
     display: none;
@@ -73,13 +73,13 @@
 
 
 .reviews__text{
-  margin-bottom: 36px;
+  margin-bottom: rem(36px);
   width: 85%;
 }
 
 
 .reviews__author{
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: bold;
   color: black;
 }
@@ -99,7 +99,7 @@
     content: url('../decor/review\ berry\ left.png');
     position: absolute;
   left: 0;
-  bottom: -103px;
+  bottom: rem(-103px);
   z-index: 60;
   }
 
@@ -113,7 +113,7 @@
 
 
 .section--review{
-  margin-top: 69px;
+  margin-top: rem(69px);
 }
 
 .reviews__avatar:nth-child(1n+2){

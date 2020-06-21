@@ -3,10 +3,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700;800&display=swap");
 html, body {
   height: 100%;
-  font-size: 18px;
   font-weight: 400;
   font-family: "Alegreya Sans", "Arial", "Helvetica", "sans-serif";
   color: #666666;
+}
+
+html {
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 .wrapper {
@@ -24,7 +37,8 @@ html, body {
 
 .container {
   margin: 0 auto;
-  width: 940px;
+  max-width: 940px;
+  width: 95%;
 }
 
 html {
@@ -82,21 +96,26 @@ img {
   background: url("../decor/узор.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.1111111111rem;
   color: white;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .hero:before, .hero:after {
+    display: none;
+  }
 }
 .hero:before {
   content: url("../decor/left leave.png");
   position: absolute;
   left: 5%;
-  bottom: -50px;
+  bottom: -2.7777777778rem;
 }
 .hero:after {
   content: url(../decor/berries.png);
   position: absolute;
   right: 0;
-  bottom: -50px;
+  bottom: -2.7777777778rem;
 }
 
 .hero__container {
@@ -104,7 +123,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 45px;
+  padding: 1.3333333333rem 0 2.5rem;
 }
 
 .chocco {
@@ -112,22 +131,60 @@ img {
   right: 23%;
   top: 10%;
 }
+@media screen and (max-width: 768px) {
+  .chocco {
+    display: none;
+  }
+}
+
+.chocco768 {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .chocco768 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+}
 
 .promo__title {
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 23px;
+  margin-bottom: 1.2777777778rem;
   line-height: 1.1;
 }
 
 .promo__description {
-  font-size: 21px;
-  padding-bottom: 32px;
+  font-size: 1.1666666667rem;
+  padding-bottom: 1.7777777778rem;
+}
+@media screen and (max-width: 768px) {
+  .promo__description {
+    width: 43%;
+  }
 }
 
 .promo {
   width: 43%;
+}
+@media screen and (max-width: 768px) {
+  .promo {
+    width: 100%;
+    margin-bottom: 19%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo__text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .header {
@@ -146,23 +203,39 @@ img {
 }
 
 .menu__item {
-  margin-right: 15px;
+  margin-right: 0.8333333333rem;
 }
 .menu__item:last-child {
   margin-right: 0;
 }
 
 .contacts-phone {
-  font-size: 20px;
+  font-size: 1.1111111111rem;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
 .contact-phone__icon-elem {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  margin-right: 0.3333333333rem;
+}
+
+.phone:hover {
+  fill: red;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__contact-phone {
+    display: none;
+  }
 }
 
 .advantages__list {
@@ -170,7 +243,7 @@ img {
 }
 
 .advantages__item {
-  margin-right: 46px;
+  margin-right: 2.5555555556rem;
   display: flex;
   align-items: center;
 }
@@ -178,19 +251,25 @@ img {
   margin-right: 0;
 }
 .advantages__item .icon {
-  width: 45px;
-  margin-right: 7px;
+  width: 2.5rem;
+  margin-right: 0.3888888889rem;
 }
 
 .advantages__text {
-  font-size: 16px;
-  max-width: 84px;
+  font-size: 0.8888888889rem;
+  max-width: 4.6666666667rem;
+}
+
+@media screen and (max-width: 768px) {
+  .advantages {
+    display: none;
+  }
 }
 
 .section {
   background-color: white;
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.1111111111rem;
 }
 
 .benefit-section {
@@ -201,7 +280,7 @@ img {
   content: url("../decor/raspberry.png");
   position: absolute;
   left: 0;
-  bottom: -103px;
+  bottom: -5.7222222222rem;
 }
 
 .container--why {
@@ -210,22 +289,22 @@ img {
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-weight: 700;
   color: #000000;
-  margin-bottom: 60px;
+  margin-bottom: 3.3333333333rem;
   text-align: center;
   text-transform: uppercase;
 }
 
 .headline {
   text-align: center;
-  margin-bottom: 57px;
+  margin-bottom: 3.1666666667rem;
 }
 
 .headline__title {
-  margin-bottom: 11px;
-  margin-top: 113px;
+  margin-bottom: 0.6111111111rem;
+  margin-top: 6.2777777778rem;
 }
 
 .headline__text {
@@ -244,7 +323,7 @@ img {
 .benefits__item:before {
   content: url("../decor/grey dotts.png");
   position: absolute;
-  top: 43px;
+  top: 2.3888888889rem;
   right: 0;
   transform: translateX(50%);
 }
@@ -264,18 +343,18 @@ img {
 
 .benefit__image-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: 7rem;
+  height: 7rem;
   position: relative;
   background: #f3f5f3;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 35px;
+  margin-bottom: 1.9444444444rem;
 }
 
 .benefit__icon {
-  width: 75px;
-  height: 69px;
+  width: 4.1666666667rem;
+  height: 3.8333333333rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -284,20 +363,20 @@ img {
 
 .benefit__text h3 {
   color: #000000;
-  font-size: 27px;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 1.6666666667rem;
 }
 
 .section__title--review {
-  margin-bottom: 44px;
+  margin-bottom: 2.4444444444rem;
 }
 
 .reviews__display-inner {
   background: #f8faf9;
-  padding: 64px 45px 18px 36px;
+  padding: 3.5555555556rem 2.5rem 1rem 2rem;
   display: flex;
-  margin-bottom: 27px;
+  margin-bottom: 1.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -310,20 +389,20 @@ img {
 .reviews__display-inner:after {
   content: "";
   display: block;
-  width: 90px;
-  height: 90px;
+  width: 5rem;
+  height: 5rem;
   background: #fff;
   border-radius: 50%;
   position: absolute;
-  top: -65px;
+  top: -3.6111111111rem;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
-  margin-left: -47px;
+  width: 14.1111111111rem;
+  height: 14.4444444444rem;
+  margin-left: -2.6111111111rem;
 }
 
 .reviews__avatar-img {
@@ -334,7 +413,7 @@ img {
 
 .reviews__content {
   flex: 1;
-  margin-left: 20px;
+  margin-left: 1.1111111111rem;
 }
 
 .reviews__items {
@@ -342,10 +421,10 @@ img {
 }
 
 .reviews__items h3 {
-  font-size: 30px;
+  font-size: 1.6666666667rem;
   font-weight: bold;
   color: #000000;
-  margin-bottom: 22px;
+  margin-bottom: 1.2222222222rem;
 }
 
 .reviews__items:nth-child(1n+2) {
@@ -353,12 +432,12 @@ img {
 }
 
 .reviews__text {
-  margin-bottom: 36px;
+  margin-bottom: 2rem;
   width: 85%;
 }
 
 .reviews__author {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
   color: black;
 }
@@ -377,7 +456,7 @@ img {
   content: url("../decor/review berry left.png");
   position: absolute;
   left: 0;
-  bottom: -103px;
+  bottom: -5.7222222222rem;
   z-index: 60;
 }
 .section--review:after {
@@ -388,7 +467,7 @@ img {
 }
 
 .section--review {
-  margin-top: 69px;
+  margin-top: 3.8333333333rem;
 }
 
 .reviews__avatar:nth-child(1n+2) {
@@ -396,11 +475,11 @@ img {
 }
 
 .interactive-avatar {
-  width: 80px;
-  height: 80px;
+  width: 4.4444444444rem;
+  height: 4.4444444444rem;
 }
 .interactive-avatar--active a img {
-  border: 6px solid #0f5a47;
+  border: 0.3333333333rem solid #0f5a47;
 }
 
 .interactive-avatar__img {
@@ -409,16 +488,16 @@ img {
   height: 100%;
   border-radius: 50%;
   overflow: hidden;
-  border: 6px solid transparent;
+  border: 0.3333333333rem solid transparent;
 }
 .interactive-avatar__img:hover {
-  border: 6px solid #0f5a47;
+  border: 0.3333333333rem solid #0f5a47;
 }
 
 .section__title--order {
-  margin-top: 86px;
+  margin-top: 4.7777777778rem;
   color: #365a49;
-  margin-bottom: 53px;
+  margin-bottom: 2.9444444444rem;
 }
 
 .order-section {
@@ -446,7 +525,7 @@ img {
 }
 
 .form__col {
-  margin-right: 20px;
+  margin-right: 1.1111111111rem;
   flex: 1;
 }
 .form__col:last-child {
@@ -455,12 +534,12 @@ img {
 
 .form__row {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 1rem;
 }
 
 .form__block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.1111111111rem;
 }
 .form__block:last-child {
   margin-right: 0;
@@ -468,29 +547,29 @@ img {
 
 .form__input {
   width: 100%;
-  height: 59px;
+  height: 3.2777777778rem;
   border: none;
-  padding: 18px 11px;
-  border: solid 3px transparent;
+  padding: 1rem 0.6111111111rem;
+  border: solid 0.1666666667rem transparent;
 }
 .form__input:focus {
   outline: none;
   border-color: #dee2bd;
 }
 .form__input--textarea {
-  height: 180px;
+  height: 10rem;
   resize: none;
 }
 
 .form__title {
   color: #365a49;
-  margin-bottom: 6px;
+  margin-bottom: 0.3333333333rem;
 }
 
 .form__controls {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 42px;
+  margin-bottom: 2.3333333333rem;
 }
 
 .radio {
@@ -498,8 +577,8 @@ img {
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
-  margin-right: 28px;
-  margin-bottom: 10px;
+  margin-right: 1.5555555556rem;
+  margin-bottom: 0.5555555556rem;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
@@ -516,16 +595,16 @@ img {
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: 1.4444444444rem;
+  height: 1.4444444444rem;
   position: relative;
   border-radius: 50%;
   background: white;
 }
 .radio__visible:before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 0.7777777778rem;
+  height: 0.7777777778rem;
   background: #365a49;
   border-radius: 50%;
   position: absolute;
@@ -537,12 +616,12 @@ img {
 
 .radio__title {
   color: #365a49;
-  padding-left: 10px;
+  padding-left: 0.5555555556rem;
 }
 
 .button {
-  padding: 18px 32px;
-  border-radius: 100px;
+  padding: 1rem 1.7777777778rem;
+  border-radius: 5.5555555556rem;
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
@@ -583,18 +662,18 @@ img {
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 0.8888888889rem;
+  height: 0.8888888889rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.0555555556rem solid transparent;
   display: block;
   position: relative;
 }
 .fixed-menu__link:before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 0.3333333333rem;
+  height: 0.3333333333rem;
   border-radius: 50%;
   background: #fff;
   position: absolute;
@@ -604,7 +683,7 @@ img {
 }
 
 .fixed-menu__item {
-  margin-bottom: 10px;
+  margin-bottom: 0.5555555556rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;

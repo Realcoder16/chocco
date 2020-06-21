@@ -1,9 +1,24 @@
 html, body{
   height: 100%;
-  font-size: 18px;
+  
   font-weight: 400;
   font-family: 'Alegreya Sans', 'Arial', 'Helvetica', 'sans-serif';
   color: #666666;
+
+
+}
+
+html {
+
+  font-size: $baseFontSize;
+
+@include tablets {
+  font-size: $baseFontSize - 1px;
+}
+@include phones {
+  font-size: $baseFontSize - 2px;
+
+}
 }
 
 
@@ -27,7 +42,8 @@ html, body{
 .container {
 
   margin: 0 auto;
-  width: $containerWidth;
+  max-width: $containerWidth;
+  width: 95%;
 }
 
 html {

@@ -14,7 +14,7 @@
 }
 
 .menu__item{
-  margin-right: 15px;
+  margin-right: rem(15px);
   
   &:last-child {
     margin-right: 0;
@@ -22,14 +22,33 @@
 }
 
 .contacts-phone{
-font-size: 20px;
+font-size: rem(20px);
 text-decoration: none;
 display: flex;
 align-items: center;
 }
 
 .contact-phone__icon-elem{
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: rem(12px);
+  height: rem(12px);
+  margin-right: rem(6px);
+}
+
+.phone{
+  &:hover {
+    fill: red;
+  }
+}
+
+
+.menu {
+  @include tablets {
+    display: none;
+  }
+}
+
+.header__contact-phone {
+  @include tablets{
+    display: none;
+  }
 }
