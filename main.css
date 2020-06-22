@@ -206,7 +206,10 @@ img {
   margin-right: 0.8333333333rem;
 }
 .menu__item:last-child {
-  margin-right: 0;
+  margin-right: 0.5555555556rem;
+}
+.menu__item:first-child {
+  margin-left: 0.5555555556rem;
 }
 
 .contacts-phone {
@@ -687,4 +690,24 @@ img {
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
+}
+
+.hamburger {
+  width: 24px;
+  height: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: inline-flex;
+  }
+}
+
+.hamburger__plank {
+  display: block;
+  background: white;
+  border-radius: 10px;
+  height: 4px;
 }
