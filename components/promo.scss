@@ -39,11 +39,10 @@
 }
 
 .chocco {
-  position: absolute;
-  right: 23%;
-  top: 10%;
+  flex: 1;
   @include tablets{
     display: none;
+   
    
   }
 }
@@ -52,6 +51,7 @@
   display: none;
   @include tablets{
     display: flex;
+    flex: 1;
     justify-content: center;
     margin-bottom: 2%;
 
@@ -65,33 +65,48 @@
   text-transform: uppercase;
   margin-bottom: rem(23px);
   line-height: 1.1;
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .promo__description {
   font-size: rem(21px);
   padding-bottom: rem(32px);
   @include tablets{
-    width: 43%;}
+    width: 55%;
+  }
+  
+  
 }
 
 .promo {
-  width: 43%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
 
   @include tablets {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+
     margin-bottom: 19%;
   }
 
 }
 
 .promo__text {
-
+width: 43%;
   @include tablets {
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    @include tablets {
+      width: 100%;
+      
+    }
+    
+    
   }
 }

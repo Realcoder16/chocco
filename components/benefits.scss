@@ -13,6 +13,9 @@ position: relative;
   top: rem(43px);
   right: 0;
   transform: translateX(50%);
+  @include tablets{
+    display: none;
+  }
 }
 
 

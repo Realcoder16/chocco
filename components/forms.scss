@@ -1,7 +1,12 @@
 .section__title--order{
-  margin-top: rem(86px);
+  padding-top: rem(86px);
   color: #365a49;
   margin-bottom: rem(53px);
+  @include tablets{
+    margin-bottom: rem(39px);
+    padding-top: rem(186px);
+  }
+  
 }
 
 
@@ -10,6 +15,7 @@
   background-color: #d2ddd9;
   background: url('../decor/pattern\ delivery.png');
   z-index: 50;
+  
   &:before{
     content: url("../decor/blueberry\ order.png");
     bottom: 10%;
@@ -28,6 +34,11 @@
 .form {
   display: flex;
   flex:1;
+
+  @include tablets{flex-direction: column;
+  padding: 0 17.7%
+}
+  
 }
 
 
@@ -36,6 +47,9 @@
     
     margin-right: rem(20px);
     flex: 1;
+    @include tablets{
+      margin: 0;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -46,6 +60,11 @@
 .form__row{
   display: flex;
   margin-bottom: rem(18px);
+  @include tablets{
+  
+  margin-bottom: 0.65rem;
+    
+  }
 
 }
 
@@ -66,6 +85,10 @@
   border: solid rem(3px) transparent;
   //border: solid rem(3px) 
 
+  @include tablets{
+    height: rem(35px);
+  }
+
   &:focus {
     outline: none;
     border-color: #dee2bd;
@@ -74,11 +97,24 @@
   &--textarea{
     height: rem(180px);
     resize: none;
+    @include tablets{
+   height: rem(80px);
   }
+
+}
+ 
 }
 
 
 .form__title{
   color: #365a49;
   margin-bottom: rem(6px);
+}
+
+
+.form__buttons{
+  @include tablets{
+    display: flex;
+    justify-content: center;
+  }
 }
