@@ -4,6 +4,11 @@
 margin-top: rem(207px);
 
   }
+
+  @include tablets{
+    margin-top: rem(98px);
+    
+      }
 }
 
 .reviews__display-inner {
@@ -143,6 +148,11 @@ margin-top: rem(207px);
     top: 0px;
     @include tablets{
       top: rem(-180px);
+      right: rem(-30px);
+    }
+
+    @include phones{
+      top: rem(-85px);
       right: rem(-30px);
     }
   }

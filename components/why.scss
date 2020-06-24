@@ -9,24 +9,37 @@
 .benefit-section {
   position: relative;
   background: url('../decor/grey\ leave.png') left top 57% no-repeat;
+
   @include tablets {
     background: none;
   }
 
-    
+  @include phones {
+    background: none;
+  }
+
+
+
 
   &:after {
     content: url('../decor/raspberry.png');
     position: absolute;
     left: 0;
     bottom: rem(-103px);
+
+    @include phones {
+      display: none;
+    }
+
+
   }
 }
+
 
 .container--why {
   height: 100%;
   position: relative;
-  
+
 
 }
 
@@ -37,5 +50,6 @@
   margin-bottom: rem(60px);
   text-align: center;
   text-transform: uppercase;
-  ;
+
 }
+

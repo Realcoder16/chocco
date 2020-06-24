@@ -1,5 +1,6 @@
 .benefit{
   text-align: center;
+  @include phones{ text-align: left;}
 }
 
 
@@ -13,6 +14,7 @@
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: rem(35px);
+  
 }
 
 .benefit__icon{
@@ -22,6 +24,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 
 .benefit__text h3{
@@ -42,5 +45,15 @@ margin-bottom: rem(30px);
    @include tablets{
     background: url('../decor/grey\ leave.png') left top 13%  no-repeat;
     position: absolute;
+    @include phones{ background: none;}
+   
    }
- }
+
+   }
+
+   .benefit__image {
+    @include phones{
+      padding-left: rem(4px);
+      padding-right: rem(14px);
+    }
+   }

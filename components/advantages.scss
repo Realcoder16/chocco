@@ -1,28 +1,31 @@
-.advantages__list{
+.advantages__list {
   display: flex;
 }
 
-.advantages__item{
- margin-right: rem(46px);
- display: flex;
- align-items: center;
+.advantages__item {
+  margin-right: rem(46px);
+  display: flex;
+  align-items: center;
 
- &:last-child {
-   margin-right: 0;
- }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .icon {
   width: rem(45px);
   margin-right: rem(7px);
+  fill: #54A791;
 }
 
-}
 
-.advantages__text{
+
+.advantages__text {
   font-size: rem(16px);
   max-width: rem(84px);
 }
 
-.advantages{
+.advantages {
   @include tablets {
     display: none;
   }

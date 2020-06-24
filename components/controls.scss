@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: rem(42px);
+
+  @include phones{
+    justify-content: center;
+  }
 }
 
 .radio {
