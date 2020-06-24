@@ -7,8 +7,12 @@
 .map{
   @include phones{
     height: 100%;
-    
-    
+       
+  }
+
+  @include tablets{
+    height: 100%;
+       
   }
 }
 
@@ -18,8 +22,14 @@
     height: 100%;
     position: relative;
     @include phones{
-      height: auto;
-           
+      height: 100%;
+          object-fit: cover;  
+    }
+
+    @include tablets{
+      height: 100%;
+          object-fit: cover;  
+         
     }
     }
     
@@ -36,6 +46,7 @@ display: flex;
     align-items: center;
     justify-content: center;
     
+    
   }
   
 
@@ -46,6 +57,9 @@ display: flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include tablets{
+      margin-left: rem(24px);
+    }
     
   }
 
@@ -57,6 +71,12 @@ display: flex;
     font-size: 21px;
     line-height: 1,1;
     color: #000000;
+
+    @include phones {
+      margin-bottom: rem(19px);
+      margin-top: rem(24px);
+      
+    }
     
   }
 
@@ -78,6 +98,10 @@ text-transform: uppercase;
     align-items: center;
     align-content: center;
     padding: rem(42px) 0 rem(31px) 0;
+
+    @include tablets {
+      margin-right: rem(26px);
+    }
          
    
   }
@@ -102,5 +126,12 @@ text-transform: uppercase;
   }
   
  
-
+.contacts--visible {
+  @include phones{
+    display: flex;
+  }
+  @include tablets{
+    display: flex;
+  }
+}
   
