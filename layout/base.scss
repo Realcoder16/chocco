@@ -1,33 +1,50 @@
-html, body{
+html,
+body {
   height: 100%;
-  font-size: 18px;
+
   font-weight: 400;
   font-family: 'Alegreya Sans', 'Arial', 'Helvetica', 'sans-serif';
   color: #666666;
+
+
+}
+
+html {
+
+  font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phones {
+    font-size: $baseFontSize - 3px;
+
+    @include phonesmall {
+      font-size: $baseFontSize - 5.5px;
+
+    }
+  }
 }
 
 
 
 .wrapper {
-
-  overflow: hidden;
+  position: relative;
   width: 100%;
-  min-width: $containerWidth + 20px;
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  
-  }
-  
-  .wrapper__content{
-    flex: 1;
-  }
+  overflow: hidden;
 
-  
+}
+
+
+
 .container {
 
   margin: 0 auto;
-  width: $containerWidth;
+  max-width: $containerWidth;
+  width: 95%;
+  position: relative;
 }
 
 html {
@@ -43,10 +60,10 @@ li {
 }
 
 
-button{
-border:none;
-background: transparent;
-cursor: pointer
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer
 }
 
 
@@ -60,7 +77,7 @@ h6 {
   font-weight: normal;
 }
 
-table{
+table {
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -83,7 +100,7 @@ p {
 }
 
 
-img{
+img {
   display: block;
   max-width: 100%;
 }

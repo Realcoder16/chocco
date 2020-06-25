@@ -1,31 +1,50 @@
-.benefits{
+.benefits {
   display: flex;
-}
-
-.benefits__item{
-flex:1;
-padding: 0 3%;
-position: relative;
-
-&:before {
-  content: url("../decor/grey\ dotts.png");
-  position: absolute;
-  top: 43px;
-  right: 0;
-  transform: translateX(50%);
-}
-
-
-&:last-child {
-  padding-right: 0;
-
-  &:before {
-    display: none;
+  @include phones{
+    flex-direction: column;
   }
 }
 
-&:first-child {
-  margin-left: -7.5%;
-}
-}
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+  @include phones{
+    display: flex;
+    padding: 0;
+    margin-bottom: rem(19px);
+     }
+   
 
+  &:before {
+    content: url("../decor/grey\ dotts.png");
+    position: absolute;
+    top: rem(43px);
+    right: 0;
+    transform: translateX(50%);
+
+    @include tablets {
+      display: none;
+    }
+
+    @include phones {
+      display: none;
+    }
+
+  }
+
+  &:last-child {
+    padding-right: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &:first-child {
+    margin-left: -7.5%;
+    @include phones{
+      margin-left: 0;
+  }
+}
+}

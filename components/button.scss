@@ -1,11 +1,13 @@
 .button {
-  padding: 18px 32px;
-  border-radius: 100px;
+  padding: rem(18px) rem(32px);
+  border-radius: rem(100px);
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
   line-height: 1;
   border: none;
+
+  
 
   &--white {
     background: white;
@@ -40,5 +42,7 @@
       
     }
   }
+
+  
 
 }

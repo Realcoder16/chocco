@@ -1,0 +1,142 @@
+
+.contacts{
+  height: 100vh;
+  
+  }
+  
+.map{
+  @include phones{
+    height: 100%;
+       
+  }
+
+  @include tablets{
+    height: 100%;
+       
+  }
+}
+
+
+  .map__img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    @include phones{
+      height: 100%;
+          object-fit: cover;  
+    }
+
+    @include tablets{
+      height: 100%;
+          object-fit: cover;  
+         
+    }
+    }
+    
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: white;
+display: flex;
+  justify-content: space-between;
+  @include phones{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  
+
+  }
+
+  .footer__content{
+    margin-left: rem(91px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include tablets{
+      margin-left: rem(24px);
+    }
+    
+  }
+
+  .footer__row{
+    
+  }
+
+  .footer__contacts{
+    font-size: rem(21px);
+    line-height: 1,1;
+    color: #000000;
+
+    @include phones {
+      margin-bottom: rem(19px);
+      margin-top: rem(24px);
+      
+      
+    }
+    
+  }
+
+  .contact-phone__text--green{
+    color: #365a49;
+
+font-size: 21px;
+
+line-height: 1.45;
+text-transform: uppercase;
+  }
+  
+  
+
+  .socials__list {
+
+    margin-right: rem(82px);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: rem(42px) 0 rem(31px) 0;
+
+    @include tablets {
+      margin-right: rem(26px);
+    }
+         
+   
+  }
+
+  .socials__link{
+    margin-right: rem(20px);
+  }
+
+
+.socials__icon{
+    width: 20px;
+  height: 20px;
+    fill:#B3B3B3;
+    &:hover {
+      fill: #000000;
+    }
+    
+  }
+
+  .contact-phone__icon-elem--black{
+    fill: #365a49
+  }
+  
+ 
+.contacts--visible {
+  @include phones{
+    display: flex;
+  }
+  @include tablets{
+    display: flex;
+  }
+}
+  
+
+.contact-phone__text{
+  
+}
