@@ -68,13 +68,14 @@ display: flex;
   }
 
   .footer__contacts{
-    font-size: 21px;
+    font-size: rem(21px);
     line-height: 1,1;
     color: #000000;
 
     @include phones {
       margin-bottom: rem(19px);
       margin-top: rem(24px);
+      
       
     }
     
@@ -135,3 +136,7 @@ text-transform: uppercase;
   }
 }
   
+
+.contact-phone__text{
+  
+}

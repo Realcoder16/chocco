@@ -9,6 +9,11 @@ margin-top: rem(207px);
     margin-top: rem(98px);
     
       }
+      
+  @include tablets{
+    margin-top: rem(90px);
+    
+      }
 }
 
 .reviews__display-inner {
@@ -150,7 +155,7 @@ margin-top: rem(207px);
     right: 0;
     top: 0px;
     @include tablets{
-      top: rem(-180px);
+      top: rem(-100px);
       right: rem(-30px);
     }
 
