@@ -12,4 +12,12 @@
   @media screen and (max-width: $phones) {
   @content;
 } 
+
 }
+
+@mixin phonesmall {
+  @media screen and (max-width: $phonesmall) {
+    @content;
+  }
+}
+

@@ -3,6 +3,12 @@
   top: 20%;
   right: 3%;
   z-index: $z-fixed-menu;
+  @include tablets {
+    display:none;
+  }
+ @include phones{
+  display:none;
+}
 }
 
 
@@ -14,6 +20,7 @@
   display: block;
   position: relative;
 
+  
   &:before{
     content: "";
     display: block;

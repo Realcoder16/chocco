@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import "layout/normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700;800&display=swap");
-html, body {
+html,
+body {
   height: 100%;
   font-weight: 400;
   font-family: "Alegreya Sans", "Arial", "Helvetica", "sans-serif";
@@ -18,71 +19,65 @@ html {
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
-
-.wrapper {
+@media screen and (max-width: 480px) and (max-width: 411px) {
+  html {
+    font-size: 12.5px;
+  }
+}
+html .wrapper {
   position: relative;
   width: 100%;
   min-height: 100%;
   overflow: hidden;
 }
-
-.container {
+html .container {
   margin: 0 auto;
   max-width: 940px;
   width: 95%;
   position: relative;
 }
-
-html {
+html html {
   box-sizing: border-box;
 }
-
-ul,
-li {
+html ul,
+html li {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-
-button {
+html button {
   border: none;
   background: transparent;
   cursor: pointer;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6 {
   margin: 0;
   font-weight: normal;
 }
-
-table {
+html table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-*,
-::after,
-::before {
+html *,
+html ::after,
+html ::before {
   box-sizing: inherit;
 }
-
-a {
+html a {
   color: inherit;
 }
-
-p {
+html p {
   margin-top: 0;
 }
-
-img {
+html img {
   display: block;
   max-width: 100%;
 }
@@ -154,6 +149,11 @@ img {
     width: 100%;
   }
 }
+@media screen and (max-width: 480px) {
+  .promo__title {
+    margin-bottom: 0.7777777778rem;
+  }
+}
 
 .promo__description {
   font-size: 1.1666666667rem;
@@ -162,6 +162,13 @@ img {
 @media screen and (max-width: 768px) {
   .promo__description {
     width: 55%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .promo__description {
+    padding-bottom: 1.4444444444rem;
+    width: auto;
+    padding: 0 0.5555555556rem;
   }
 }
 
@@ -188,10 +195,6 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-}
-@media screen and (max-width: 768px) and (max-width: 768px) {
-  .promo__text {
     width: 100%;
   }
 }
@@ -519,7 +522,7 @@ img {
 .reviews__display-inner:before {
   content: url("../decor/Слой 2.png");
   right: 0;
-  top: 5%;
+  top: 0;
   position: absolute;
 }
 .reviews__display-inner:after {
@@ -634,7 +637,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .section--review:after {
-    top: -4.7222222222rem;
+    top: -6.3888888889rem;
     right: -1.6666666667rem;
   }
 }
@@ -650,6 +653,7 @@ img {
 .interactive-avatar {
   width: 4.4444444444rem;
   height: 4.4444444444rem;
+  margin-right: 0.6111111111rem;
 }
 .interactive-avatar--active a img {
   border: 0.3333333333rem solid #0f5a47;
@@ -745,7 +749,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .form__row {
-    margin-bottom: 1.3888888889rem;
+    margin-bottom: rem;
   }
 }
 
@@ -893,6 +897,16 @@ img {
   top: 20%;
   right: 3%;
   z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fixed-menu {
+    display: none;
+  }
 }
 
 .fixed-menu__link {
@@ -1045,7 +1059,7 @@ img {
   height: 20px;
   fill: #B3B3B3;
 }
-.socials__icon--f {
+.socials__icon:hover {
   fill: #000000;
 }
 

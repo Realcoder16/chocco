@@ -28,8 +28,9 @@ margin-top: rem(207px);
   &:before {
     content: url('../decor/Слой\ 2.png');
     right: 0;
-    top: 5%;
+    top: 0;
     position: absolute;
+   
 
   }
 
@@ -131,6 +132,7 @@ margin-top: rem(207px);
 .section--review {
   background: url('../decor/review\ decor\ left.png') left bottom -20% no-repeat;
   position: relative;
+  
 
 
   &:before {
@@ -139,6 +141,7 @@ margin-top: rem(207px);
     left: 0;
     bottom: rem(-103px);
     z-index: 60;
+   
   }
 
   &:after {
@@ -152,7 +155,7 @@ margin-top: rem(207px);
     }
 
     @include phones{
-      top: rem(-85px);
+      top: rem(-115px);
       right: rem(-30px);
     }
   }
