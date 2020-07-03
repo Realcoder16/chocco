@@ -1,0 +1,112 @@
+@charset "UTF-8";
+.section-slider {
+  background-color: #f8faf9;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.section-slider:before {
+  content: url("../decor/Узор на фоне.png");
+  position: absolute;
+  bottom: rem(-80px);
+  right: 0;
+}
+.section-slider:after {
+  content: url("../decor/blueberries.png");
+  position: absolute;
+  bottom: rem(-50px);
+  right: 0;
+}
+
+.container--slider {
+  height: 100%;
+}
+
+.slider-window {
+  height: 100%;
+}
+
+.slider {
+  height: 100%;
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+
+.left {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+.slider__item {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-left {
+  flex: 1;
+}
+
+.row-right {
+  flex: 1;
+}
+
+.content {
+  margin-bottom: rem(37px);
+}
+
+.price__icon {
+  height: rem(30px);
+  width: rem(30px);
+}
+
+.content__item {
+  display: flex;
+}
+
+.title h2 {
+  margin-bottom: rem(22px);
+  color: #000000;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text p {
+  color: #666666;
+  margin-bottom: rem(44px);
+  width: 80%;
+}
+
+.content__item {
+  display: flex;
+  margin-bottom: rem(35px);
+}
+
+.energy {
+  margin-right: rem(55px);
+}
+.energy span {
+  color: #000000;
+  font-weight: bold;
+}
+
+.weight span {
+  color: #000000;
+  font-weight: bold;
+}
+
+.price {
+  margin-right: rem(30px);
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 60px;
+  color: #151515;
+}

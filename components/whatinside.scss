@@ -1,0 +1,41 @@
+
+.whatinside{
+  background: white;
+  position: absolute;
+  right: 2%;
+    top: 19%;
+  padding: rem(20px);
+  display: none;
+}
+
+.ingredients__icon{
+  width: 35px;
+  height: 35px;
+}
+
+.whatinside__list{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.whatinside__item{
+  display: flex;
+  justify-content: space-between
+}
+
+.ingredients {
+  align-items: center;
+  text-align: center;
+
+
+ & p{
+  margin-right: rem(73px);
+  display: inline-flex;
+  color: #363636;
+   line-height: 1.5;
+  font-size: rem(16px);
+  
+  
+}
+}
