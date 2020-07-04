@@ -138,6 +138,7 @@ margin-top: rem(207px);
   background: url('../decor/review\ decor\ left.png') left bottom -20% no-repeat;
   position: relative;
   
+  
 
 
   &:before {
@@ -146,6 +147,9 @@ margin-top: rem(207px);
     left: 0;
     bottom: rem(-103px);
     z-index: 60;
+    @include phonesmall{
+      display: none;
+    }
    
   }
 
@@ -157,6 +161,9 @@ margin-top: rem(207px);
     @include tablets{
       top: rem(-100px);
       right: rem(-30px);
+      @include phonesmall{
+        display: none;
+      }
     }
 
     @include phones{

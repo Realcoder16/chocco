@@ -1,0 +1,78 @@
+
+  .content {
+    margin-bottom: rem(15px);
+position: relative;
+    
+
+
+
+    @include tablets {
+      display: none;
+
+    }
+
+    @include phones {
+      display: none;
+    }
+  }
+
+
+
+.whatinside{
+  background: transparent;
+    padding: rem(20px);
+    position: absolute;
+    top: 0px;
+    width: 90px;
+    height: 90px;
+    
+    
+
+  
+}
+
+.ingredients__icon{
+  width: 35px;
+  height: 35px;
+}
+
+.whatinside__list{
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  position: absolute;
+  right: 0%;
+  top: -9999px;
+  
+}
+
+  .whatinside:hover  .whatinside__list{
+    right: -270px;
+    top: 0;
+    
+  }
+
+  
+  
+
+
+.whatinside__item{
+  display: flex;
+  justify-content: space-between
+}
+
+.ingredients {
+  align-items: center;
+  text-align: center;
+
+
+ & p{
+  margin-right: rem(73px);
+  display: inline-flex;
+  color: #363636;
+   line-height: 1.5;
+  font-size: rem(16px);
+  
+  
+}
+}
