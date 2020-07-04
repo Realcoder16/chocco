@@ -1,10 +1,16 @@
 const openContent = document.querySelector(".content");
-openContent.addEventListener("click", e=>{
+const closeContent = document.querySelector(".content")
+openContent.addEventListener("mouseover", e => {
   const reciept = document.querySelector(".whatinside");
-  
-  reciept.style.display = "block";
-  e.preventDefault();
+  openContent.classList.add("content");
 
+  if (!e.target.classList.contains("content")) {
+    reciept.style.display = "block";
+    e.preventDefault();
+  }
+  else {
+    reciept.style.display = "none";
+    e.preventDefault();
+  }
 
 });
-

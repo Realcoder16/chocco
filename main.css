@@ -1152,7 +1152,6 @@ img {
   background-color: #f8faf9;
   height: 100vh;
   width: 100vw;
-  position: relative;
 }
 .section-slider:before {
   content: url("../decor/Узор на фоне.png");
@@ -1167,18 +1166,19 @@ img {
   right: 0;
 }
 @media screen and (max-width: 411px) {
-  .section-slider:after {
+  .section-slider {
     display: none;
   }
 }
 @media screen and (max-width: 480px) {
-  .section-slider:after {
+  .section-slider {
     right: -1.1111111111rem;
   }
 }
 
 .container--slider {
   height: 100%;
+  position: relative;
 }
 
 .slider-window {
@@ -1192,13 +1192,13 @@ img {
 
 .right {
   position: absolute;
-  top: 53%;
-  right: 3%;
+  top: 48%;
+  right: -3%;
 }
 @media screen and (max-width: 480px) {
   .right {
     top: 26%;
-    right: 5%;
+    right: 7%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1210,19 +1210,19 @@ img {
 
 .left {
   position: absolute;
-  top: 53%;
-  left: 3%;
+  top: 48%;
+  left: 0%;
 }
 @media screen and (max-width: 480px) {
   .left {
     top: 26%;
-    right: 3%;
+    right: 7%;
   }
 }
 @media screen and (max-width: 768px) {
   .left {
     top: 26%;
-    right: 5%;
+    right: 11%;
   }
 }
 
@@ -1245,6 +1245,7 @@ img {
 }
 .row-right {
   flex: 1;
+  padding-right: 1.1111111111rem;
 }
 @media screen and (max-width: 768px) {
   .row-right {
@@ -1327,8 +1328,18 @@ img {
   color: #151515;
 }
 
+.chocco-bars {
+  width: 89%;
+}
+@media screen and (max-width: 768px) {
+  .chocco-bars {
+    margin: 6.3888888889rem 0px 3.1666666667rem 0px;
+  }
+}
+
 .content {
   margin-bottom: 0.8333333333rem;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .content {
@@ -1341,22 +1352,13 @@ img {
   }
 }
 
-.chocco-bars {
-  width: 89%;
-}
-@media screen and (max-width: 768px) {
-  .chocco-bars {
-    margin: 6.3888888889rem 0px 3.1666666667rem 0px;
-  }
-}
-
 .whatinside {
-  background: white;
-  position: absolute;
-  right: 2%;
-  top: 19%;
+  background: transparent;
   padding: 1.1111111111rem;
-  display: none;
+  position: absolute;
+  top: 0px;
+  width: 90px;
+  height: 90px;
 }
 
 .ingredients__icon {
@@ -1366,7 +1368,16 @@ img {
 
 .whatinside__list {
   display: flex;
+  background-color: white;
   flex-direction: column;
+  position: absolute;
+  right: 0%;
+  top: -9999px;
+}
+
+.whatinside:hover .whatinside__list {
+  right: -270px;
+  top: 0;
 }
 
 .whatinside__item {
