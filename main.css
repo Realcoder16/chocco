@@ -1166,12 +1166,12 @@ img {
   right: 0;
 }
 @media screen and (max-width: 411px) {
-  .section-slider {
+  .section-slider:after {
     display: none;
   }
 }
 @media screen and (max-width: 480px) {
-  .section-slider {
+  .section-slider:after {
     right: -1.1111111111rem;
   }
 }
