@@ -1,3 +1,6 @@
+
+
+
 .section-slider {
   background-color: #f8faf9;
   height: 100vh;
@@ -37,12 +40,17 @@
 
 .slider-window {
   height: 100%;
+  display: flex;
+  overflow: hidden;
+  width: $containerWidth;
 
 }
 
 .slider {
-  height: 100%;
+  
   display: flex;
+  position: relative;
+ 
 
 
 }
@@ -66,7 +74,7 @@
 .left {
   position: absolute;
   top: 48%;
-  left: 0%;
+  left: -3%;
 
   @include phones {
     top: 26%;
@@ -86,6 +94,7 @@
   height: 100%;
   justify-content: space-between;
   align-items: center;
+  width: $containerWidth;
 
   @include tablets {
     flex-direction: column;
