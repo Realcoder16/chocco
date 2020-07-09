@@ -1,6 +1,5 @@
 
 
-
 .section-slider {
   background-color: #f8faf9;
   height: 100vh;
@@ -50,7 +49,6 @@
 
 .slider-window {
   height: 100%;
-  display: flex;
   overflow: hidden;
   display: flex;
   margin-left: rem(5px);
@@ -112,8 +110,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  min-width: 100%;
+
   @include tablets {
     flex-direction: column;
     justify-content: center;
@@ -124,20 +122,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   }
 
 
 }
 
 .row-left {
-  flex: 1.3;
+  
 
   @include tablets {
-    flex: 1;}
+    }
 
     @include phones {
-      width: 85%;
-      flex: 0;
+      
     }
 
 
@@ -148,7 +146,7 @@
   padding-right: rem(20px);
 
   @include tablets {
-    padding: 0 rem(30px);
+   
 
   }
 }
@@ -167,6 +165,11 @@
   display: flex;
 
   @include tablets {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include phones {
     justify-content: center;
     align-items: center;
   }
@@ -204,6 +207,11 @@
   color: #666666;
 
   @include tablets {
+
+    text-align: center;
+  }
+
+  @include phones {
 
     text-align: center;
   }
@@ -256,6 +264,7 @@
 
   @include tablets {
     margin: rem(115px) 0px rem(57px) 0px;
+    
   }
 
   

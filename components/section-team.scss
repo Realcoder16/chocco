@@ -4,6 +4,10 @@
 
 .team__item {
   flex: 1;
+  padding-right: rem(15px);
+  &:last-child {
+    padding-right: 0;
+  }
 }
 
 .section-team {
