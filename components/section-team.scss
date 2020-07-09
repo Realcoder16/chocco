@@ -12,6 +12,8 @@
 
 .team__img {
   margin-bottom: rem(26px);
+display: flex;
+justify-content: center;
 }
 
 .team__subtitle {
@@ -39,24 +41,24 @@
 }
 
 .team__hidden {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 110px;
+  display: block;
   & h3 {
     color: #000000;
     font-size: rem(18px);
     text-align: center;
     margin-bottom: rem(10px);
+    
 
   }
 
   & p {
-
+padding-bottom: rem(8px);
     font-weight: 300;
     text-align: center;
-
+@include phones {
+      padding: 0 rem(55px);
+      
+    }
   }
 }
 

@@ -4,12 +4,18 @@ const itemsList = document.querySelector(".slider");
 const computedStyles = window.getComputedStyle(itemsList);
 const items = document.querySelectorAll(".slider__item");
 
+
 const minRight = 0;
-const maxRight = 940;
-const step = 940;
-
-
+const itemWidth = getComputedStyle(items[0]).width;
+console.log(itemWidth);
+const step = parseInt(itemWidth);
+const preShownItems = parseInt(itemWidth) / step;
+const maxRight = (items.length - preShownItems) * step;
 let currentRight = 0;
+
+
+
+
 
 itemsList.style.right = currentRight;
 

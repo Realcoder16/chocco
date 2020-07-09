@@ -36,13 +36,32 @@
 .container--slider {
   height: 100%;
   position: relative;
+
+
+@include tablets{
+}
+@include phones {
+}
+
+
+
+
 }
 
 .slider-window {
   height: 100%;
   display: flex;
   overflow: hidden;
-  width: $containerWidth;
+  display: flex;
+  margin-left: rem(5px);
+  margin-right: rem(19px);
+  @include phonesmall {
+    padding: 0;
+  }
+  @include tablets{
+    padding: 0;
+  }
+  
 
 }
 
@@ -62,12 +81,12 @@
 
   @include phones {
     top: 26%;
-    right: 7%;
+    right: 10%;
   }
 
   @include tablets {
     top: 26%;
-    right: 5%;
+    right: 2%;
   }
 }
 
@@ -78,12 +97,12 @@
 
   @include phones {
     top: 26%;
-    right: 7%;
+    left: -1%;
   }
 
   @include tablets {
     top: 26%;
-    right: 11%;
+    left: -1%;
   }
 
 }
@@ -91,12 +110,17 @@
 
 .slider__item {
   display: flex;
-  height: 100%;
   justify-content: space-between;
   align-items: center;
-  width: $containerWidth;
-
+  height: 100vh;
+  width: 100vw;
   @include tablets {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  @include phones {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -108,7 +132,13 @@
 .row-left {
   flex: 1.3;
 
-  @include tablets {}
+  @include tablets {
+    flex: 1;}
+
+    @include phones {
+      width: 85%;
+      flex: 0;
+    }
 
 
 }
@@ -226,5 +256,10 @@
 
   @include tablets {
     margin: rem(115px) 0px rem(57px) 0px;
+  }
+
+  
+  @include phones {
+
   }
 }
