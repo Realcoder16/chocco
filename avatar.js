@@ -20,7 +20,7 @@ console.log($this);
 
       });
 
-const i = 1;  
+      const i = switcherArr.indexOf($this);
 
   if (i !== -1) {
 
