@@ -940,6 +940,16 @@ img {
   background: transparent;
 }
 
+.button--green-lightgreen {
+  background: #2e4e3f;
+  font-size: 19px;
+  font-weight: 700;
+  color: white;
+}
+.button--green-lightgreen:hover {
+  background: #365a49;
+}
+
 .fixed-menu {
   position: fixed;
   top: 20%;

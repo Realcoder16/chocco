@@ -6,7 +6,7 @@
   text-decoration: none;
   line-height: 1;
   border: none;
-
+  
   
 
   &--white {
@@ -44,5 +44,19 @@
   }
 
   
+
+}
+
+.button--green-lightgreen{
+
+background: $darkGreen;
+font-size: 19px;
+font-weight: 700;
+color: white;
+
+&:hover{
+
+background: #365a49
+}
 
 }
