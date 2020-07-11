@@ -1,25 +1,27 @@
 const validateField = (form, fieldArray, digitsArray) => {
+
   fieldArray.forEach(field => {
     field.removeClass('input--error');
-    if (field.val().trim() === "") {
+    if ((field.val().trim() === "") || (field.val() > -Infinity || field.val() < Infinity)) {
       field.addClass('input--error');
     }
 
-
+  });
     digitsArray.forEach(field => {
       field.addClass('input--error');
-      if (field.val() >= 0 || field.val() <= 9) {
+     
+      if (field.val() > 0 || field.val() <= 9) {
         field.removeClass('input--error')
       }
-          
 
 
 
-      });
 
     });
 
   
+
+
 
 
 

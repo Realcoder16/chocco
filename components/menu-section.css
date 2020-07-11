@@ -1,5 +1,5 @@
 .menu-section {
-  background: url("../menu-section/background.png");
+  background-image: url("../menu-section/background.png");
   position: relative;
   z-index: 1000;
 }
