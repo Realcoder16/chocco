@@ -34,6 +34,7 @@ position: relative;
 .ingredients__icon{
   width: 35px;
   height: 35px;
+  display: inline-flex;
 }
 
 .whatinside__list{
@@ -43,6 +44,7 @@ position: relative;
   position: absolute;
   right: 0%;
   top: -9999px;
+  padding: rem(25px);
   
 }
 
@@ -64,6 +66,7 @@ position: relative;
 .ingredients {
   align-items: center;
   text-align: center;
+  align-self: center;
 
 
  & p{
@@ -72,7 +75,9 @@ position: relative;
   color: #363636;
    line-height: 1.5;
   font-size: rem(16px);
-  
+  padding-left: rem(15px);
+align-content: center; 
   
 }
 }
+

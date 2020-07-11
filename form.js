@@ -1,20 +1,17 @@
-const validateField = (form, fieldArray, DigitsArray) => {
-debugger;
+const validateField = (form, fieldArray, digitsArray) => {
   fieldArray.forEach(field => {
     field.removeClass('input--error');
     if (field.val().trim() === "") {
       field.addClass('input--error');
     }
 
-    DigitsArray.forEach((field) => {
-      field.addEventListener('keydown', event => {
-        if (event.key >= 0 || event.key <= 9) {
-          event.removeClass('input--error')
-        }
 
-        else {
-          event.preventDefault();
-        }
+    digitsArray.forEach(field => {
+      field.addClass('input--error');
+      if (field.val() >= 0 || field.val() <= 9) {
+        field.removeClass('input--error')
+      }
+          
 
 
 
@@ -22,7 +19,7 @@ debugger;
 
     });
 
-  });
+  
 
 
 
