@@ -81,6 +81,7 @@ $('.form').submit(e => {
 
     request.done((data) => {
       content.text(data.message);
+      $('.form').trigger('reset');
 
     });
 
@@ -101,10 +102,9 @@ $('.form').submit(e => {
 
   }
 
-  $('.form').trigger('reset');
+  
 
 });
-
 
 
 
