@@ -1,13 +1,20 @@
 
 const validateField = (form, fieldArray) => {
-  fieldArray.forEach(field => {
+  var r = new RegExp("\d+");debugger;
 
+  fieldArray.forEach(field => {
     field.removeClass('input--error');
-    if (field.val().trim() === "") {
+    if (field.val().trim() === "")
+    {
       field.addClass('input--error');
     }
+    
 
   });
+
+  
+
+  
 
   const errorField = form.find('.input--error');
 
@@ -21,14 +28,19 @@ $('.form').submit(e => {
 
   const form = $(e.currentTarget);
   const name = form.find("[name='name']");
-  const phone = form.find("[name='phone']");
+  var phone = form.find("[name='phone']");
   const comment = form.find("[name='comment']");
   const to = form.find("[name='to']");
+  const street = form.find("[name='street']");
+  const home = form.find("[name='home']");
+  const part = form.find("[name='part']");
+  const apart = form.find("[name='apart']");
+  const floor = form.find("[name='floor']");
   const modal = $("#modal");
   const content = modal.find(".modal__content");
 
 
-  const isValid = validateField(form, [name, phone, comment, to]);
+  const isValid = validateField(form, [name, phone, comment, to, street, home, part, apart, floor]);
 
 
 
@@ -43,7 +55,14 @@ $('.form').submit(e => {
         name: name.val(),
         phone: phone.val(),
         comment: comment.val(),
-        to: to.val()
+        to: to.val(),
+        street: street.val(),
+        home: home.val(),
+        part: comment.val(),
+        apart: comment.val(),
+        floor: comment.val(),
+
+        
       },
 
 

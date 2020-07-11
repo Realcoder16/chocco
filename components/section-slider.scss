@@ -4,6 +4,7 @@
   background-color: #f8faf9;
   height: 100vh;
   width: 100vw;
+  position: relative;
 
   &:before {
     content: url("../decor/Узор\ на\ фоне.png");
@@ -15,7 +16,7 @@
   &:after {
     content: url("../decor/blueberries.png");
     position: absolute;
-    bottom: rem(-50px);
+    bottom: rem(-70px);
     right: 0;
 
     @include phonesmall {
@@ -129,14 +130,16 @@
 }
 
 .row-left {
+  display: flex;
+  justify-content: center;
+
+ 
   
 
   @include tablets {
     }
 
     @include phones {
-      
-    }
 
 
 }
@@ -170,7 +173,7 @@
   }
 
   @include phones {
-    justify-content: center;
+    justify-content: flex;
     align-items: center;
   }
 }
