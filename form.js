@@ -1,20 +1,30 @@
-
-const validateField = (form, fieldArray) => {
-  var r = new RegExp("\d+");debugger;
-
+const validateField = (form, fieldArray, DigitsArray) => {
+debugger;
   fieldArray.forEach(field => {
     field.removeClass('input--error');
-    if (field.val().trim() === "")
-    {
+    if (field.val().trim() === "") {
       field.addClass('input--error');
     }
-    
+
+    DigitsArray.forEach((field) => {
+      field.addEventListener('keydown', event => {
+        if (event.key >= 0 || event.key <= 9) {
+          event.removeClass('input--error')
+        }
+
+        else {
+          event.preventDefault();
+        }
+
+
+
+      });
+
+    });
 
   });
 
-  
 
-  
 
   const errorField = form.find('.input--error');
 
@@ -40,8 +50,7 @@ $('.form').submit(e => {
   const content = modal.find(".modal__content");
 
 
-  const isValid = validateField(form, [name, phone, comment, to, street, home, part, apart, floor]);
-
+  const isValid = validateField(form, [name, comment, street, to], [phone, home, part, apart, floor]);
 
 
   if (isValid) {
@@ -62,13 +71,13 @@ $('.form').submit(e => {
         apart: comment.val(),
         floor: comment.val(),
 
-        
+
       },
 
 
 
 
-      
+
     });
 
     request.done((data) => {

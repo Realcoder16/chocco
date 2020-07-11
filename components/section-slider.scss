@@ -1,5 +1,3 @@
-
-
 .section-slider {
   background-color: #f8faf9;
   height: 100vh;
@@ -38,10 +36,9 @@
   position: relative;
 
 
-@include tablets{
-}
-@include phones {
-}
+  @include tablets {}
+
+  @include phones {}
 
 
 
@@ -54,22 +51,23 @@
   display: flex;
   margin-left: rem(5px);
   margin-right: rem(19px);
+
   @include phonesmall {
     padding: 0;
   }
-  @include tablets{
+
+  @include tablets {
     padding: 0;
   }
-  
+
 
 }
 
 .slider {
-  
+
   display: flex;
   position: relative;
- 
-
+  width: 100%;
 
 }
 
@@ -119,6 +117,7 @@
     align-items: center;
 
   }
+
   @include phones {
     flex-direction: column;
     justify-content: center;
@@ -133,145 +132,136 @@
   display: flex;
   justify-content: center;
 
- 
-  
+}
 
-  @include tablets {
+
+  @include tablets {}
+
+  @include phones {}
+
+  .row-right {
+    flex: 1;
+    padding-right: rem(20px);
+
+    @include tablets {}
+  }
+
+
+
+
+
+
+  .price__icon {
+    height: rem(30px);
+    width: rem(30px);
+  }
+
+  .content__item {
+    display: flex;
+
+    @include tablets {
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include phones {
+      justify-content: flex;
+      align-items: center;
+    }
+  }
+
+
+
+
+  .title h2 {
+
+    color: #000000;
+    font-size: rem(36px);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: rem(15px);
+
+    @include tablets {
+      text-align: center;
+    }
+
+    @include phones {
+      text-align: center;
+      font-size: rem(32px);
+
+
+    }
+
+
+  }
+
+
+
+
+  .text p {
+    color: #666666;
+
+    @include tablets {
+
+      text-align: center;
     }
 
     @include phones {
 
-
-}
-
-.row-right {
-  flex: 1;
-  padding-right: rem(20px);
-
-  @include tablets {
-   
+      text-align: center;
+    }
 
   }
-}
+
+  .content__item {
+    display: flex;
+    margin-bottom: rem(35px);
 
 
-
-
-
-
-.price__icon {
-  height: rem(30px);
-  width: rem(30px);
-}
-
-.content__item {
-  display: flex;
-
-  @include tablets {
-    justify-content: center;
-    align-items: center;
+    @include phones {
+      margin-bottom: rem(12px);
+    }
   }
 
-  @include phones {
-    justify-content: flex;
-    align-items: center;
-  }
-}
+  .energy {
+    margin-right: rem(55px);
 
-
-
-
-.title h2 {
-
-  color: #000000;
-  font-size: rem(36px);
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: rem(15px);
-
-  @include tablets {
-    text-align: center;
+    & span {
+      color: #000000;
+      font-weight: bold;
+    }
   }
 
-  @include phones {
-    text-align: center;
-    font-size: rem(32px);
+
+
+  .weight {
+    & span {
+      color: #000000;
+      font-weight: bold;
+    }
+  }
+
+  .price {
+    margin-right: rem(30px);
+    text-transform: uppercase;
+    font-size: rem(60px);
+    font-weight: 300;
+    line-height: rem(60px);
+    color: #151515;
 
 
   }
 
 
-}
+
+  .chocco-bars {
+    width: 89%;
+
+    @include tablets {
+      margin: rem(115px) 0px rem(57px) 0px;
+
+    }
 
 
-
-
-.text p {
-  color: #666666;
-
-  @include tablets {
-
-    text-align: center;
+    @include phones {}
   }
-
-  @include phones {
-
-    text-align: center;
-  }
-
-}
-
-.content__item {
-  display: flex;
-  margin-bottom: rem(35px);
-
-
-  @include phones {
-    margin-bottom: rem(12px);
-  }
-}
-
-.energy {
-  margin-right: rem(55px);
-
-  & span {
-    color: #000000;
-    font-weight: bold;
-  }
-}
-
-
-
-.weight {
-  & span {
-    color: #000000;
-    font-weight: bold;
-  }
-}
-
-.price {
-  margin-right: rem(30px);
-  text-transform: uppercase;
-  font-size: rem(60px);
-  font-weight: 300;
-  line-height: rem(60px);
-  color: #151515;
-
-
-}
-
-
-
-.chocco-bars {
-  width: 89%;
-
-  @include tablets {
-    margin: rem(115px) 0px rem(57px) 0px;
-    
-  }
-
-  
-  @include phones {
-
-  }
-}

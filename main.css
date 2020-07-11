@@ -1211,6 +1211,7 @@ img {
 .slider {
   display: flex;
   position: relative;
+  width: 100%;
 }
 
 .right {
@@ -1274,11 +1275,6 @@ img {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 480px) {
-  .row-left {
-    max-width: 70vw;
-  }
-}
 
 .row-right {
   flex: 1;
@@ -1300,7 +1296,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .content__item {
-    justify-content: center;
+    justify-content: flex;
     align-items: center;
   }
 }
