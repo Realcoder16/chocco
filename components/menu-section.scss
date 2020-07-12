@@ -1,8 +1,71 @@
-.menu-section{
-  
-  background-image: url('../menu-section/background.png');
+.menu-section {
+
+  background: url('../menu-section/background.png') center center no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
   position: relative;
+
+}
+
+
+
+.menu-section__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.menu-section__items {
+  height: 100vh;
+}
+
+
+.menu-section__photo {
+  height: 100vh;
+}
+
+
+.menu-section__img {
+  height: 100vh;
+}
+
+.menu-section__content {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 300px;
+  height: 0;
   z-index: 1000;
+
+
+  .menu-section__hidden {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+
+
+    .menu-section__text {
+
+      background-color: rgb(51, 53, 55);
+      opacity: 0.929;
+      color: white;
+      font-size: rem(16px);
+
+    }
+
+
+    .menu-section__photo-hidden {
+      height: 100vh;
+
+      .menu-section__img-hidden {
+        height: 100vh;
+      }
+
+    }
+
+  }
 
 
 }
