@@ -28,6 +28,10 @@
 
 .menu-section__photo {
   height: 100vh;
+
+  @include tablets{
+    width: rem(100px);
+  }
 }
 
 
@@ -81,10 +85,13 @@
 
   90% {
         width: 46vw;
-  }
+        
+        }
+  
 
   100% {
     width: 40vw;
+    
   }
 
 
@@ -117,10 +124,9 @@
       @keyframes bounce-back {
         0% {
           width: 40vw;
+          
         }
-      
-      
-        
+                 
       
         100% {
           width: 0;
@@ -147,3 +153,78 @@
         right: rem(30px);
       }
       
+
+
+
+      .menu-section__hidden--animated--768 {
+
+
+        animation-name: bounce-768;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+      
+       
+      
+      }
+      
+      @keyframes bounce-768 {
+        0% {
+          width: 0;
+        }
+      
+      
+        100% {
+              max-width: 100%;
+              
+              }
+                        
+      }
+      
+      .menu-section__hidden--animated--768 .menu-section__text p{
+        
+          color: white;
+          transition-property: color;
+          transition-delay: 1.2s;
+            
+          
+          
+            }
+      
+      
+      
+            .menu-section__hidden--animated--close--768 {
+      
+      
+              animation-name: bounce-back-768;
+              animation-duration: 1.5s;
+              animation-timing-function: linear;
+              animation-fill-mode: backward;
+            
+             
+            
+            }
+            
+            @keyframes bounce-back-768 {
+              0% {
+                max-width: 100%;
+                
+              }
+                       
+            
+              100% {
+                width: 0;
+              }
+            
+            
+            }
+            
+            .menu-section__hidden--animated--close--768 .menu-section__text p{
+              
+                color: transparent;
+                transition-property: color;
+                transition-delay: .5s;
+                  
+                
+                
+                  }

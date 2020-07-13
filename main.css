@@ -981,7 +981,7 @@ img {
   width: 0.3333333333rem;
   height: 0.3333333333rem;
   border-radius: 50%;
-  background: #fff;
+  background: greenyellow;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1592,6 +1592,11 @@ img {
 .menu-section__photo {
   height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  .menu-section__photo {
+    width: 5.5555555556rem;
+  }
+}
 
 .menu-section__img {
   height: 100vh;
@@ -1661,4 +1666,46 @@ img {
   position: absolute;
   top: 1.6666666667rem;
   right: 1.6666666667rem;
+}
+
+.menu-section__hidden--animated--768 {
+  animation-name: bounce-768;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bounce-768 {
+  0% {
+    width: 0;
+  }
+  100% {
+    max-width: 100%;
+  }
+}
+.menu-section__hidden--animated--768 .menu-section__text p {
+  color: white;
+  transition-property: color;
+  transition-delay: 1.2s;
+}
+
+.menu-section__hidden--animated--close--768 {
+  animation-name: bounce-back-768;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: backward;
+}
+
+@keyframes bounce-back-768 {
+  0% {
+    max-width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+.menu-section__hidden--animated--close--768 .menu-section__text p {
+  color: transparent;
+  transition-property: color;
+  transition-delay: 0.5s;
 }
