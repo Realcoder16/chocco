@@ -1,0 +1,9 @@
+.menu-section {
+  background-image: url("../menu-section/background.png");
+  z-index: 1000;
+}
+
+.menu-section__list {
+  display: flex;
+  justify-content: flex-end;
+}
