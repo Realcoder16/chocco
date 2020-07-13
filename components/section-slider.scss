@@ -49,8 +49,8 @@
   height: 100%;
   overflow: hidden;
   display: flex;
-  margin-left: rem(5px);
-  margin-right: rem(19px);
+  margin-left: rem(16px);
+  margin-right: rem(22px);
 
   @include phonesmall {
     padding: 0;
@@ -68,6 +68,8 @@
   display: flex;
   position: relative;
   width: 100%;
+  padding-right: rem(10px);
+  padding-left: rem(10px);
 
 }
 
@@ -78,7 +80,7 @@
 
   @include phones {
     top: 26%;
-    right: 10%;
+    right: -2%;
   }
 
   @include tablets {
@@ -94,12 +96,12 @@
 
   @include phones {
     top: 26%;
-    left: -1%;
+    left: 0%;
   }
 
   @include tablets {
     top: 26%;
-    left: -1%;
+    left: 0%;
   }
 
 }
@@ -259,6 +261,7 @@
 
     @include tablets {
       margin: rem(115px) 0px rem(57px) 0px;
+      margin-right: rem(10px);
 
     }
 

@@ -1194,8 +1194,8 @@ img {
   height: 100%;
   overflow: hidden;
   display: flex;
-  margin-left: 0.2777777778rem;
-  margin-right: 1.0555555556rem;
+  margin-left: 0.8888888889rem;
+  margin-right: 1.2222222222rem;
 }
 @media screen and (max-width: 411px) {
   .slider-window {
@@ -1212,6 +1212,8 @@ img {
   display: flex;
   position: relative;
   width: 100%;
+  padding-right: 0.5555555556rem;
+  padding-left: 0.5555555556rem;
 }
 
 .right {
@@ -1222,7 +1224,7 @@ img {
 @media screen and (max-width: 480px) {
   .right {
     top: 26%;
-    right: 10%;
+    right: -2%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1240,13 +1242,13 @@ img {
 @media screen and (max-width: 480px) {
   .left {
     top: 26%;
-    left: -1%;
+    left: 0%;
   }
 }
 @media screen and (max-width: 768px) {
   .left {
     top: 26%;
-    left: -1%;
+    left: 0%;
   }
 }
 
@@ -1372,6 +1374,7 @@ img {
 @media screen and (max-width: 768px) {
   .chocco-bars {
     margin: 6.3888888889rem 0px 3.1666666667rem 0px;
+    margin-right: 0.5555555556rem;
   }
 }
 .content {
@@ -1415,7 +1418,7 @@ img {
 }
 
 .whatinside:hover .whatinside__list {
-  right: -270px;
+  right: -307px;
   top: 0;
 }
 
