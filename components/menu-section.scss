@@ -4,7 +4,7 @@
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  position: relative;
+  
 
 }
 
@@ -18,6 +18,11 @@
 
 .menu-section__items {
   height: 100vh;
+  display: flex;
+  justify-items: flex-end;
+  position: relative;
+
+ 
 }
 
 
@@ -30,42 +35,115 @@
   height: 100vh;
 }
 
-.menu-section__content {
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 300px;
-  height: 0;
-  z-index: 1000;
+
+.menu-section__hidden {
+  justify-content: flex-start;
+  background-color: rgb(51, 53, 55);
+  opacity: 0.929;
+  width: 0vw;
+  overflow: hidden;
+  position: relative;
 
 
-  .menu-section__hidden {
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
 
 
-    .menu-section__text {
 
-      background-color: rgb(51, 53, 55);
-      opacity: 0.929;
-      color: white;
-      font-size: rem(16px);
+  .menu-section__text p {
+    color: transparent;
+    font-size: rem(16px);
+    padding: rem(56px) rem(127px) rem(60px) rem(30px);
+    line-height: 1.5;
+    
 
-    }
+  }
+
+}
 
 
-    .menu-section__photo-hidden {
-      height: 100vh;
 
-      .menu-section__img-hidden {
-        height: 100vh;
-      }
+.menu-section__hidden--animated {
 
-    }
 
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+ 
+
+}
+
+@keyframes bounce {
+  0% {
+    width: 0;
+  }
+
+
+  90% {
+        width: 46vw;
+  }
+
+  100% {
+    width: 40vw;
   }
 
 
 }
+
+.menu-section__hidden--animated .menu-section__text p{
+  
+    color: white;
+    transition-property: color;
+    transition-delay: 1.2s;
+      
+    
+    
+      }
+
+
+
+      .menu-section__hidden--animated--close {
+
+
+        animation-name: bounce-back;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-fill-mode: backward;
+      
+       
+      
+      }
+      
+      @keyframes bounce-back {
+        0% {
+          width: 40vw;
+        }
+      
+      
+        
+      
+        100% {
+          width: 0;
+        }
+      
+      
+      }
+      
+      .menu-section__hidden--animated--close .menu-section__text p{
+        
+          color: transparent;
+          transition-property: color;
+          transition-delay: .5s;
+            
+          
+          
+            }
+
+
+
+      .close__link--menu{
+        position: absolute;
+        top: rem(30px);
+        right: rem(30px);
+      }
+      
