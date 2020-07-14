@@ -1570,6 +1570,10 @@ img {
   border: solid 0.1666666667rem red;
 }
 
+.close__icon--menu {
+  overflow: hidden;
+}
+
 .menu-section {
   background: url("../menu-section/background.png") center center no-repeat;
   width: 100vw;
@@ -1594,7 +1598,12 @@ img {
 }
 @media screen and (max-width: 768px) {
   .menu-section__photo {
-    width: 5.5555555556rem;
+    width: 14vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu-section__photo {
+    width: 14vw;
   }
 }
 
@@ -1606,15 +1615,20 @@ img {
   justify-content: flex-start;
   background-color: #333537;
   opacity: 0.929;
-  width: 0vw;
+  width: 0;
   overflow: hidden;
   position: relative;
 }
 .menu-section__hidden .menu-section__text p {
   color: transparent;
   font-size: 0.8888888889rem;
-  padding: 3.1111111111rem 7.0555555556rem 3.3333333333rem 1.6666666667rem;
+  margin: 3.1111111111rem 7.0555555556rem 0rem 1.6666666667rem;
   line-height: 1.5;
+}
+@media screen and (max-width: 480px) {
+  .menu-section__hidden .menu-section__text p {
+    margin: 3.1111111111rem 1.1111111111rem 0rem 1.1111111111rem;
+  }
 }
 
 .menu-section__hidden--animated {
@@ -1638,7 +1652,7 @@ img {
 .menu-section__hidden--animated .menu-section__text p {
   color: white;
   transition-property: color;
-  transition-delay: 1.2s;
+  transition-delay: 1.4s;
 }
 
 .menu-section__hidden--animated--close {
@@ -1650,7 +1664,7 @@ img {
 
 @keyframes bounce-back {
   0% {
-    width: 40vw;
+    width: 58vw;
   }
   100% {
     width: 0;
@@ -1668,37 +1682,43 @@ img {
   right: 1.6666666667rem;
 }
 
+.close__icon--menu {
+  fill: #c2c3c4;
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
+}
+
 .menu-section__hidden--animated--768 {
-  animation-name: bounce-768;
-  animation-duration: 1.5s;
+  animation-name: bounce768;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
 
-@keyframes bounce-768 {
+@keyframes bounce768 {
   0% {
     width: 0;
   }
   100% {
-    max-width: 100%;
+    width: 58vw;
   }
 }
 .menu-section__hidden--animated--768 .menu-section__text p {
   color: white;
   transition-property: color;
-  transition-delay: 1.2s;
+  transition-delay: 1s;
 }
 
 .menu-section__hidden--animated--close--768 {
   animation-name: bounce-back-768;
   animation-duration: 1.5s;
   animation-timing-function: linear;
-  animation-fill-mode: backward;
+  animation-fill-mode: forward;
 }
 
 @keyframes bounce-back-768 {
   0% {
-    max-width: 100%;
+    width: 70vw;
   }
   100% {
     width: 0;

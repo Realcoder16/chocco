@@ -1,3 +1,9 @@
+.close__icon--menu{
+  overflow: hidden;
+
+}
+
+
 .menu-section {
 
   background: url('../menu-section/background.png') center center no-repeat;
@@ -30,8 +36,13 @@
   height: 100vh;
 
   @include tablets{
-    width: rem(100px);
+    width: 14vw;
   }
+  @include phones{
+    width: 14vw;
+  }
+
+
 }
 
 
@@ -44,9 +55,10 @@
   justify-content: flex-start;
   background-color: rgb(51, 53, 55);
   opacity: 0.929;
-  width: 0vw;
+  width: 0;
   overflow: hidden;
   position: relative;
+  
 
 
 
@@ -55,10 +67,14 @@
   .menu-section__text p {
     color: transparent;
     font-size: rem(16px);
-    padding: rem(56px) rem(127px) rem(60px) rem(30px);
+    margin: rem(56px) rem(127px) rem(0px) rem(30px);
     line-height: 1.5;
     
+@include phones{
+    
+  margin: rem(56px) rem(20px) rem(0px) rem(20px);
 
+  }
   }
 
 }
@@ -101,7 +117,7 @@
   
     color: white;
     transition-property: color;
-    transition-delay: 1.2s;
+    transition-delay: 1.4s;
       
     
     
@@ -123,7 +139,7 @@
       
       @keyframes bounce-back {
         0% {
-          width: 40vw;
+          width: 58vw;
           
         }
                  
@@ -154,13 +170,19 @@
       }
       
 
+      .close__icon--menu{
+        fill: #c2c3c4;
+        width: rem(20px);
+        height: rem(20px);
+      }
+
 
 
       .menu-section__hidden--animated--768 {
 
 
-        animation-name: bounce-768;
-        animation-duration: 1.5s;
+        animation-name: bounce768;
+        animation-duration: 1s;
         animation-timing-function: linear;
         animation-fill-mode: forwards;
       
@@ -168,14 +190,14 @@
       
       }
       
-      @keyframes bounce-768 {
+      @keyframes bounce768 {
         0% {
           width: 0;
         }
       
       
         100% {
-              max-width: 100%;
+              width: 58vw;
               
               }
                         
@@ -185,7 +207,7 @@
         
           color: white;
           transition-property: color;
-          transition-delay: 1.2s;
+          transition-delay: 1s;
             
           
           
@@ -199,7 +221,7 @@
               animation-name: bounce-back-768;
               animation-duration: 1.5s;
               animation-timing-function: linear;
-              animation-fill-mode: backward;
+              animation-fill-mode: forward;
             
              
             
@@ -207,7 +229,7 @@
             
             @keyframes bounce-back-768 {
               0% {
-                max-width: 100%;
+                width: 70vw;
                 
               }
                        

@@ -9,8 +9,7 @@ const imageItems = document.querySelectorAll('.menu-section__photo');
 document.addEventListener("DOMContentLoaded", function (event) {
   /*ПОЛУЧАЕТ ТЕКУЩУЮ ШИРИНУ ЭКРАНА*/
   var widthWind = document.querySelector('body').offsetWidth;
-  if (widthWind > 768)
-    console.log(widthWind); {
+  if (widthWind > 769) {
 
     for (let index = 0; index < imageItems.length; index++) {
 
@@ -41,33 +40,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
 
 
-
+        
       });
 
     }
 
 
+  } else {
 
-  }
-});
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", function (event) {
-  /*ПОЛУЧАЕТ ТЕКУЩУЮ ШИРИНУ ЭКРАНА*/
-  var widthWind = document.querySelector('body').offsetWidth;
-  if (widthWind <= 768) { console.log(widthWind) }
-
-  else {
 
     for (let index = 0; index < imageItems.length; index++) {
 
       imageItems[index].addEventListener('click', function (event) {
 
         for (let k = 0; k < imageItems.length; k++) {
-          hidden[k].classList.remove('.menu-section__hidden--animated--768')
+          hidden[k].classList.remove('menu-section__hidden--animated--768')
           hidden[k].classList.remove('menu-section__hidden--animated--close--768')
 
         };
@@ -99,5 +86,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+
+
+
   }
+
+
+
+
+
+
+
+
+
 });
+
+
+

@@ -18,7 +18,7 @@ event.preventDefault();
 
 
 closeButton.addEventListener('click', event=> {
-
+  event.preventDefault();
   const overlay = document.querySelector('.hamburger-block');
 
 overlay.style.display = "none";
