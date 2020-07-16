@@ -8,6 +8,8 @@
 
 .benefit-section {
   position: relative;
+  padding-top: rem(113px);
+
   background: url('../decor/grey\ leave.png') left top 57% no-repeat;
 
   @include tablets {
@@ -42,13 +44,14 @@
   z-index: 20;
 
 
+
 }
 
 .section__title {
   font-size: rem(48px);
   font-weight: 700;
   color: #000000;
-  margin-bottom: rem(60px);
+  padding-bottom: rem(60px);
   text-align: center;
   text-transform: uppercase;
 

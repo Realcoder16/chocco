@@ -114,7 +114,7 @@ img {
   bottom: -2.7777777778rem;
 }
 .hero:after {
-  content: url(../decor/berries.png);
+  content: url("../decor/berries.png");
   position: absolute;
   right: 0;
   bottom: -2.7777777778rem;
@@ -324,6 +324,7 @@ img {
 
 .benefit-section {
   position: relative;
+  padding-top: 6.2777777778rem;
   background: url("../decor/grey leave.png") left top 57% no-repeat;
 }
 @media screen and (max-width: 768px) {
@@ -358,7 +359,7 @@ img {
   font-size: 2.6666666667rem;
   font-weight: 700;
   color: #000000;
-  margin-bottom: 3.3333333333rem;
+  padding-bottom: 3.3333333333rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -370,7 +371,6 @@ img {
 
 .headline__title {
   margin-bottom: 0.6111111111rem;
-  margin-top: 6.2777777778rem;
 }
 @media screen and (max-width: 768px) {
   .headline__title {
@@ -486,10 +486,8 @@ img {
   margin-bottom: 1.6666666667rem;
 }
 
-@media screen and (max-width: 768px) {
-  .benefit-section {
-    position: relative;
-  }
+.benefit-section {
+  height: 100vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -512,12 +510,8 @@ img {
 }
 
 .section__title--review {
-  margin-bottom: 2.4444444444rem;
-}
-@media screen and (max-width: 768px) {
-  .section__title--review {
-    margin-top: 11.5rem;
-  }
+  padding-bottom: 2.4444444444rem;
+  padding-top: 5.5555555556rem;
 }
 @media screen and (max-width: 768px) {
   .section__title--review {
@@ -688,10 +682,6 @@ img {
     top: -6.3888888889rem;
     right: -1.6666666667rem;
   }
-}
-
-.section--review {
-  margin-top: 3.8333333333rem;
 }
 
 .reviews__avatar:nth-child(1n+2) {
@@ -1008,7 +998,7 @@ img {
   margin-bottom: 0.5555555556rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
-  border-color: #fff;
+  border-color: greenyellow;
 }
 
 .maincontent {
@@ -1502,7 +1492,6 @@ img {
 }
 
 .section-team {
-  margin-top: 4.0555555556rem;
   position: relative;
 }
 .section-team:before {
@@ -1524,6 +1513,16 @@ img {
     height: 80px;
     background-size: cover;
   }
+}
+
+.team__title {
+  padding-top: 4.0555555556rem;
+  font-size: 2.6666666667rem;
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 3.3333333333rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .team__img {
@@ -1687,6 +1686,7 @@ img {
   opacity: 0.929;
   width: 0;
   overflow: hidden;
+  position: relative;
 }
 
 .menu-section__text p {
@@ -1807,25 +1807,28 @@ img {
   color: white;
 }
 
-.player--container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+.player__title {
+  padding-top: 5.5555555556rem;
+  font-size: 2.6666666667rem;
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 3.3333333333rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.player-section {
+.video {
   position: relative;
   z-index: 70;
 }
-.player-section:after {
+.video:after {
   content: url("../decor/how_berries.png");
   position: absolute;
   bottom: -15%;
   right: 0;
 }
 @media screen and (max-width: 480px) {
-  .player-section:after {
+  .video:after {
     content: "";
     background-image: url("../decor/how_berries.png");
     position: absolute;
@@ -1837,13 +1840,6 @@ img {
   }
 }
 
-.player--title {
-  margin-top: 5.5555555556rem;
-}
-
-.player {
-  position: relative;
-}
 .player:before {
   content: url("../decor/how_lists.png");
   position: absolute;
@@ -1858,5 +1854,201 @@ img {
 @media screen and (max-width: 768px) {
   .player:before {
     display: none;
+  }
+}
+
+.video {
+  position: relative;
+  background-color: #f8faf9;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  max-width: 660px;
+  width: 100%;
+  height: 406px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .player {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player {
+    max-height: 295px;
+  }
+}
+
+.player__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.player__elem {
+  width: 100%;
+  height: 100%;
+}
+
+.player__splash {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.player__splash img {
+  width: 100%;
+  height: 90%;
+}
+
+.active .player__splash {
+  display: none;
+}
+
+.player__controls {
+  display: flex;
+  flex-direction: row;
+  background-color: #d3dadf;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  z-index: 5;
+}
+@media screen and (max-width: 480px) {
+  .player__controls {
+    justify-content: space-between;
+  }
+}
+
+.player__playback {
+  display: flex;
+  align-items: center;
+}
+
+.player__start {
+  width: 55px;
+  height: 55px;
+  border: none;
+  background: url("../decor/pause.png") no-repeat;
+  background-position: center;
+  margin-right: 10px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 100;
+}
+
+.player--paused {
+  background: url("") no-repeat;
+  background-position: center;
+}
+
+.player__start:hover {
+  cursor: pointer;
+}
+
+.player__playback {
+  width: 68%;
+  position: relative;
+  margin-right: 15px;
+}
+@media screen and (max-width: 480px) {
+  .player__playback {
+    width: 35%;
+  }
+}
+.player__playback::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  display: block;
+  background: url("../decor/playback-icon-14.jpg") no-repeat;
+}
+
+.player__playback-button {
+  background: #626262;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+
+.player__volume {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
+}
+@media screen and (max-width: 480px) {
+  .player__volume {
+    width: 33%;
+  }
+}
+
+.volume__pic {
+  width: 40px;
+  height: 20px;
+  border: none;
+  background: url("") no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.volume__pic--nosound {
+  background: url("") no-repeat;
+  background-position: center;
+}
+
+.volume__playback {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.volume__playback::before {
+  content: "";
+  width: 90%;
+  height: 4px;
+  position: absolute;
+  display: block;
+  background: url("") no-repeat;
+}
+
+.volume__playback-button {
+  background: #626262;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  iframe#yt-player {
+    width: 100%;
   }
 }

@@ -21,7 +21,7 @@
   }
 
   &:after {
-    content: url(../decor/berries.png);
+    content: url("../decor/berries.png");
     position: absolute;
     right: 0;
     bottom: rem(-50px);

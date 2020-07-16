@@ -1,7 +1,7 @@
 .section__title--review {
-  margin-bottom: rem(44px);
+  padding-bottom: rem(44px);
+  padding-top: rem(100px);
   @include tablets{
-margin-top: rem(207px);
 
   }
 
@@ -187,9 +187,7 @@ margin-top: rem(207px);
 }
 
 
-.section--review {
-  margin-top: rem(69px);
-}
+
 
 .reviews__avatar:nth-child(1n+2) {
 

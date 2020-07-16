@@ -16,21 +16,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
       imageItems[index].addEventListener('click', function (event) {
 
         for (let k = 0; k < imageItems.length; k++) {
-
           hidden[k].classList.remove('menu-section__hidden--animated')
           hidden[k].classList.remove('menu-section__hidden--animated--close')
 
         };
 
-        if (!hidden[index].classList.contains('menu-section__hidden--animated')){
-         hidden[index].classList.add('menu-section__hidden--animated') 
-
-        }
-        else{
-          hidden[index].classList.remove('menu-section__hidden--animated')
-          hidden[index].classList.add('menu-section__hidden--animated--close')
-
-        }
+        hidden[index].classList.add('menu-section__hidden--animated')
 
       });
 
@@ -47,9 +38,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
           hidden[j].classList.add('menu-section__hidden--animated--close')
 
         }
+
+
         
       });
-
 
     }
 
