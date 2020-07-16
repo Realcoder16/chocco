@@ -31,7 +31,7 @@ html {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -39,6 +39,7 @@ html {
   margin: 0 auto;
   max-width: 940px;
   width: 95%;
+  height: 100%;
   position: relative;
 }
 
@@ -96,7 +97,7 @@ img {
 .hero {
   background: url("../decor/узор.png") right bottom no-repeat;
   background-color: #61c4d9;
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   color: white;
   position: relative;
@@ -317,7 +318,7 @@ img {
 
 .section {
   background-color: white;
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
 }
 
@@ -350,6 +351,7 @@ img {
 .container--why {
   height: 100%;
   position: relative;
+  z-index: 20;
 }
 
 .section__title {
@@ -637,6 +639,7 @@ img {
 .section--review {
   background: url("../decor/review decor left.png") left bottom -20% no-repeat;
   position: relative;
+  z-index: 90;
 }
 .section--review:before {
   content: url("../decor/review berry left.png");
@@ -648,6 +651,19 @@ img {
 @media screen and (max-width: 411px) {
   .section--review:before {
     display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section--review:before {
+    content: "";
+    background-image: url("../decor/review berry left.png");
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+    z-index: 300;
+    width: 90px;
+    height: 90px;
+    background-size: cover;
   }
 }
 .section--review:after {
@@ -727,7 +743,7 @@ img {
   background-color: #d2ddd9;
   background: url("../decor/pattern delivery.png");
   z-index: 50;
-  height: 100vh;
+  height: 100%;
 }
 .order-section:before {
   content: url("../decor/blueberry order.png");
@@ -995,6 +1011,12 @@ img {
   border-color: #fff;
 }
 
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
+}
+
 .hamburger {
   width: 24px;
   height: 20px;
@@ -1016,18 +1038,13 @@ img {
 }
 
 .contacts {
-  height: 100vh;
-}
-
-.map {
   height: 100%;
 }
 
-.map__img {
+#map {
+  height: 100%;
   width: 100%;
-  height: 100%;
   position: relative;
-  object-fit: cover;
 }
 
 .footer {
@@ -1159,9 +1176,10 @@ img {
 
 .section-slider {
   background-color: #f8faf9;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   position: relative;
+  z-index: 10;
 }
 .section-slider:before {
   content: url("../decor/Узор на фоне.png");
@@ -1169,19 +1187,43 @@ img {
   bottom: -4.4444444444rem;
   right: 0;
 }
+@media screen and (max-width: 480px) {
+  .section-slider:before {
+    content: "";
+    background-image: url("../decor/Узор на фоне.png");
+    position: absolute;
+    bottom: -20%;
+    right: -7%;
+    width: 200px;
+    height: 400px;
+    background-size: cover;
+  }
+}
 .section-slider:after {
   content: url("../decor/blueberries.png");
   position: absolute;
   bottom: -3.8888888889rem;
   right: 0;
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 480px) {
   .section-slider:after {
+    content: "";
+    background-image: url("../decor/blueberries.png");
+    position: absolute;
+    bottom: -3.8888888889rem;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 411px) {
+  .section-slider {
     display: none;
   }
 }
 @media screen and (max-width: 480px) {
-  .section-slider:after {
+  .section-slider {
     right: -1.1111111111rem;
   }
 }
@@ -1460,6 +1502,27 @@ img {
 
 .section-team {
   margin-top: 4.0555555556rem;
+  position: relative;
+}
+.section-team:before {
+  content: url("../decor/team_raspberry.png");
+  position: absolute;
+  bottom: -7%;
+  left: 0%;
+  z-index: 60;
+}
+@media screen and (max-width: 480px) {
+  .section-team:before {
+    content: "";
+    background-image: url("../decor/team_raspberry.png");
+    position: absolute;
+    bottom: -4%;
+    left: 0%;
+    z-index: 60;
+    width: 70px;
+    height: 80px;
+    background-size: cover;
+  }
 }
 
 .team__img {
@@ -1577,8 +1640,14 @@ img {
 .menu-section {
   background: url("../menu-section/background.png") center center no-repeat;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-size: cover;
+  position: relative;
+  z-index: 50;
+}
+
+.menu-section__title {
+  font-size: 2.6666666667rem;
 }
 
 .menu-section__list {
@@ -1617,16 +1686,16 @@ img {
   opacity: 0.929;
   width: 0;
   overflow: hidden;
-  position: relative;
 }
-.menu-section__hidden .menu-section__text p {
+
+.menu-section__text p {
   color: transparent;
   font-size: 0.8888888889rem;
   margin: 3.1111111111rem 7.0555555556rem 0rem 1.6666666667rem;
   line-height: 1.5;
 }
 @media screen and (max-width: 480px) {
-  .menu-section__hidden .menu-section__text p {
+  .menu-section__text p {
     margin: 3.1111111111rem 1.1111111111rem 0rem 1.1111111111rem;
   }
 }
@@ -1664,7 +1733,7 @@ img {
 
 @keyframes bounce-back {
   0% {
-    width: 58vw;
+    width: 40vw;
   }
   100% {
     width: 0;
@@ -1728,4 +1797,65 @@ img {
   color: transparent;
   transition-property: color;
   transition-delay: 0.5s;
+}
+
+.menu-section__title {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+}
+
+.player--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.player-section {
+  position: relative;
+  z-index: 70;
+}
+.player-section:after {
+  content: url("../decor/how_berries.png");
+  position: absolute;
+  bottom: -15%;
+  right: 0;
+}
+@media screen and (max-width: 480px) {
+  .player-section:after {
+    content: "";
+    background-image: url("../decor/how_berries.png");
+    position: absolute;
+    bottom: -15%;
+    right: 0;
+    width: 100px;
+    height: 150px;
+    background-size: cover;
+  }
+}
+
+.player--title {
+  margin-top: 5.5555555556rem;
+}
+
+.player {
+  position: relative;
+}
+.player:before {
+  content: url("../decor/how_lists.png");
+  position: absolute;
+  left: -20%;
+  bottom: 2%;
+}
+@media screen and (max-width: 480px) {
+  .player:before {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .player:before {
+    display: none;
+  }
 }

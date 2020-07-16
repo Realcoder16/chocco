@@ -1,0 +1,62 @@
+.player--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.player-section {
+  position: relative;
+  z-index: 70;
+
+
+  &:after {
+
+    content: url("../decor/how_berries.png");
+    position: absolute;
+    bottom: -15%;
+    right: 0;
+
+    @include phones {
+      content: '';
+      background-image: url("../decor/how_berries.png");
+      position: absolute;
+      bottom: -15%;
+      right: 0;
+      width: 100px;
+      height: 150px;
+      background-size: cover;
+
+
+    }
+
+
+  }
+
+
+}
+
+.player--title {
+  margin-top: rem(100px);
+
+}
+
+.player {
+  position: relative;
+
+  &:before {
+    content: url('../decor/how_lists.png');
+    position: absolute;
+    left: -20%;
+    bottom: 2%;
+
+    @include phones {
+      display: none;
+
+    }
+
+    @include tablets {
+      display: none;
+    }
+  }
+}

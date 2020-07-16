@@ -1,5 +1,4 @@
-
-.container--team{
+.container--team {
   height: 100vh;
 }
 
@@ -11,6 +10,7 @@
 .team__item {
   flex: 1;
   padding-right: rem(15px);
+
   &:last-child {
     padding-right: 0;
   }
@@ -18,98 +18,125 @@
 
 .section-team {
   margin-top: rem(73px);
-}
+  position: relative;
 
-.team__img {
-  margin-bottom: rem(26px);
-display: flex;
-justify-content: center;
-}
+  &:before {
+    content: url("../decor/team_raspberry.png");
+    position: absolute;
+    bottom: -7%;
+    left: 0%;
+    z-index: 60;
 
-.team__subtitle {
-  display: flex;
-  justify-content: center;
+    @include phones {
+      content: '';
+      background-image: url("../decor/team_raspberry.png");
+      position: absolute;
+      bottom: -4%;
+      left: 0%;
+      z-index: 60;
+      width: 70px;
+      height: 80px;
+      background-size: cover;
 
 
-  & h2 {
-    margin-bottom: rem(13px);
-    font-size: rem(21px);
-    font-weight: bold;
-    color: #000000;
-    padding-right: rem(4px);
-  }
-
-
-}
-
-.team__subtitle--active h2{
-  color: rgb(156, 156, 29);
-}
-
-.subtitle__img {
-  align-self: center;
-}
-
-.team__hidden {
-  display: block;
-  & h3 {
-    color: #000000;
-    font-size: rem(18px);
-    text-align: center;
-    margin-bottom: rem(10px);
-    
-
-  }
-
-  & p {
-padding-bottom: rem(8px);
-    font-weight: 300;
-    text-align: center;
-@include phones {
-      padding: 0 rem(55px);
-      
     }
   }
+
 }
 
+  .team__img {
+    margin-bottom: rem(26px);
+    display: flex;
+    justify-content: center;
+  }
 
-.team__content{
-  height: 0;
-  overflow: hidden;
-  transition: height 0.3s;
-
-  
-}
-
-.team__list--desktop{
-
-  @include tablets {
-    display:none;
-    
-      }
-
-      @include phones {
-        display:none;
-        
-          }
-    
-}
+  .team__subtitle {
+    display: flex;
+    justify-content: center;
 
 
-.team__list--mobile{
+    & h2 {
+      margin-bottom: rem(13px);
+      font-size: rem(21px);
+      font-weight: bold;
+      color: #000000;
+      padding-right: rem(4px);
+    }
 
-display:none;
- 
-  @include tablets {
-display:flex;
-flex-direction: column;
 
   }
-  @include phones {
-    display:flex;
-flex-direction: column;
-    
+
+  .team__subtitle--active h2 {
+    color: rgb(156, 156, 29);
+  }
+
+  .subtitle__img {
+    align-self: center;
+  }
+
+  .team__hidden {
+    display: block;
+
+    & h3 {
+      color: #000000;
+      font-size: rem(18px);
+      text-align: center;
+      margin-bottom: rem(10px);
+
+
+    }
+
+    & p {
+      padding-bottom: rem(8px);
+      font-weight: 300;
+      text-align: center;
+
+      @include phones {
+        padding: 0 rem(55px);
+
       }
+    }
+  }
 
 
-}
+  .team__content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+
+
+  }
+
+  .team__list--desktop {
+
+    @include tablets {
+      display: none;
+
+    }
+
+    @include phones {
+      display: none;
+
+    }
+
+  }
+
+
+  .team__list--mobile {
+
+    display: none;
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    @include phones {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+
+  }

@@ -1,6 +1,6 @@
 .section {
   background-color: white;
-  height: 100vh;
+  height: 100%;
   min-height: rem(650px);
 
 
@@ -39,6 +39,7 @@
 .container--why {
   height: 100%;
   position: relative;
+  z-index: 20;
 
 
 }

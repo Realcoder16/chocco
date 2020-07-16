@@ -137,6 +137,7 @@ margin-top: rem(207px);
 .section--review {
   background: url('../decor/review\ decor\ left.png') left bottom -20% no-repeat;
   position: relative;
+  z-index: 90;
   
   
 
@@ -149,6 +150,18 @@ margin-top: rem(207px);
     z-index: 60;
     @include phonesmall{
       display: none;
+    }
+    @include phones{
+      content: '';
+       background-image: url('../decor/review\ berry\ left.png');
+       position: absolute;
+       left: 0;
+       bottom: rem(0px);
+       z-index: 300;
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+      
     }
    
   }

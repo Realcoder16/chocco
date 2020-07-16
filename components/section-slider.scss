@@ -1,14 +1,28 @@
 .section-slider {
   background-color: #f8faf9;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   position: relative;
+  z-index: 10;
+
 
   &:before {
     content: url("../decor/Узор\ на\ фоне.png");
     position: absolute;
     bottom: rem(-80px);
     right: 0;
+    @include phones{
+      content: '';
+       background-image: url("../decor/Узор\ на\ фоне.png");
+    position: absolute;
+    bottom: -20%;
+    right: -7%;
+    width: 200px;
+    height: 400px;
+    background-size: cover;
+
+      
+    }
   }
 
   &:after {
@@ -16,6 +30,17 @@
     position: absolute;
     bottom: rem(-70px);
     right: 0;
+    @include phones{
+      content: '';
+      background-image: url("../decor/blueberries.png");
+      position: absolute;
+    bottom: rem(-70px);
+    right: 0;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    }
+  }
 
     @include phonesmall {
       display: none;
@@ -27,7 +52,7 @@
 
   }
 
-}
+
 
 
 
