@@ -6,8 +6,7 @@ const footer = $(".footer");
 const sideMenu = $(".fixed-menu");
 const menuItems = sideMenu.find(".fixed-menu__item");
 
-const mobileDetect = new MobileDetect(window.navigator.userAgent);
-const isMobile = mobileDetect.mobile();
+
 
 
 let inScroll = false;
