@@ -1,19 +1,7 @@
 .section__title--review {
   padding-bottom: rem(44px);
   padding-top: rem(100px);
-  @include tablets{
-
-  }
-
-  @include tablets{
-    margin-top: rem(98px);
-    
-      }
-      
-  @include tablets{
-    margin-top: rem(90px);
-    
-      }
+ 
 }
 
 .reviews__display-inner {

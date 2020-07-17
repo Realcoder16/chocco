@@ -81,8 +81,8 @@ text-transform: uppercase;
     align-content: center;
     padding: rem(42px) 0 rem(31px) 0;
 
-    @include tablets {
-      
+    @include phones {
+      padding: rem(20px) 0 rem(25px) 0;
     }
          
    

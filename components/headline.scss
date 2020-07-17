@@ -6,13 +6,7 @@
 
 
 .headline__title{
-  margin-bottom: rem(11px);
-  @include tablets {
-    margin-top: rem(290px);
-  }
-  @include phones {
-    margin-top: rem(55px);
-  }
+  
   
 }
 

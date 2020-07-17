@@ -160,18 +160,16 @@
 
 .player__start {
   width: 55px;
-  height: 55px;
+  height: 100%;
   border: none;
-  background: url('../decor/pause.png') no-repeat;
+  background: url('../decor/Play\ gray.png') no-repeat;
   background-position: center;
-  margin-right: 10px;
-  object-fit: cover;
-  position: absolute;
-  z-index: 100;
+  margin-right: 11px;
+  
 }
 
 .player--paused {
-  background: url('') no-repeat;
+  background: url('../decor/pause.png') no-repeat;
   background-position: center;
   
   
@@ -196,7 +194,7 @@
     height: 4px;
     position: absolute;
     display: block;
-    background: url("../decor/playback-icon-14.jpg") no-repeat;
+    background: url("../decor/bigscale.png") no-repeat;
   }
 }
 
@@ -228,14 +226,16 @@
   width: 40px;
   height: 20px;
   border: none;
-  background: url("") no-repeat;
+  background: url("../decor/Volum\ gray.png") no-repeat;
   background-position: center;
   margin-right: 10px;
 }
 
 .volume__pic--nosound {
-  background: url("") no-repeat;
+  background: url("../decor/nosound.png") no-repeat;
   background-position: center;
+  width: 52px;
+  height: 52px;
 }
 
 .volume__playback {
@@ -250,7 +250,7 @@
     height: 4px;
     position: absolute;
     display: block;
-    background: url("") no-repeat;
+    background: url("../decor/scale.png") no-repeat;
   }
 }
 

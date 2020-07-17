@@ -322,33 +322,6 @@ img {
   min-height: 36.1111111111rem;
 }
 
-.benefit-section {
-  position: relative;
-  padding-top: 6.2777777778rem;
-  background: url("../decor/grey leave.png") left top 57% no-repeat;
-}
-@media screen and (max-width: 768px) {
-  .benefit-section {
-    background: none;
-  }
-}
-@media screen and (max-width: 480px) {
-  .benefit-section {
-    background: none;
-  }
-}
-.benefit-section:after {
-  content: url("../decor/raspberry.png");
-  position: absolute;
-  left: 0;
-  bottom: -5.7222222222rem;
-}
-@media screen and (max-width: 480px) {
-  .benefit-section:after {
-    display: none;
-  }
-}
-
 .container--why {
   height: 100%;
   position: relative;
@@ -363,24 +336,15 @@ img {
   text-align: center;
   text-transform: uppercase;
 }
+@media screen and (max-width: 480px) {
+  .section__title {
+    padding-bottom: 1.1111111111rem;
+  }
+}
 
 .headline {
   text-align: center;
   margin-bottom: 3.1666666667rem;
-}
-
-.headline__title {
-  margin-bottom: 0.6111111111rem;
-}
-@media screen and (max-width: 768px) {
-  .headline__title {
-    margin-top: 16.1111111111rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .headline__title {
-    margin-top: 3.0555555556rem;
-  }
 }
 
 .headline__text {
@@ -389,6 +353,35 @@ img {
 @media screen and (max-width: 480px) {
   .headline__text {
     padding: 0 3%;
+  }
+}
+
+.benefit-section {
+  position: relative;
+  padding-top: 6.2777777778rem;
+  background: url("../decor/grey leave.png") left top 57% no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .benefit-section {
+    background: none;
+    padding-top: 6.2777777778rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .benefit-section {
+    background: none;
+    padding-top: 2.5rem;
+  }
+}
+.benefit-section:after {
+  content: url("../decor/raspberry.png");
+  position: absolute;
+  left: 0;
+  bottom: -5.7222222222rem;
+}
+@media screen and (max-width: 480px) {
+  .benefit-section:after {
+    display: none;
   }
 }
 
@@ -512,16 +505,6 @@ img {
 .section__title--review {
   padding-bottom: 2.4444444444rem;
   padding-top: 5.5555555556rem;
-}
-@media screen and (max-width: 768px) {
-  .section__title--review {
-    margin-top: 5.4444444444rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .section__title--review {
-    margin-top: 5rem;
-  }
 }
 
 .reviews__display-inner {
@@ -1088,6 +1071,12 @@ img {
   align-content: center;
   padding: 2.3333333333rem 0 1.7222222222rem 0;
 }
+@media screen and (max-width: 480px) {
+  .socials__list {
+    padding: 1.1111111111rem 0 1.3888888889rem 0;
+  }
+}
+
 .socials__link {
   margin-right: 1.1111111111rem;
 }
@@ -1942,18 +1931,15 @@ img {
 
 .player__start {
   width: 55px;
-  height: 55px;
+  height: 100%;
   border: none;
-  background: url("../decor/pause.png") no-repeat;
+  background: url("../decor/Play gray.png") no-repeat;
   background-position: center;
-  margin-right: 10px;
-  object-fit: cover;
-  position: absolute;
-  z-index: 100;
+  margin-right: 11px;
 }
 
 .player--paused {
-  background: url("") no-repeat;
+  background: url("../decor/pause.png") no-repeat;
   background-position: center;
 }
 
@@ -1977,7 +1963,7 @@ img {
   height: 4px;
   position: absolute;
   display: block;
-  background: url("../decor/playback-icon-14.jpg") no-repeat;
+  background: url("../decor/bigscale.png") no-repeat;
 }
 
 .player__playback-button {
@@ -2009,14 +1995,16 @@ img {
   width: 40px;
   height: 20px;
   border: none;
-  background: url("") no-repeat;
+  background: url("../decor/Volum gray.png") no-repeat;
   background-position: center;
   margin-right: 10px;
 }
 
 .volume__pic--nosound {
-  background: url("") no-repeat;
+  background: url("../decor/nosound.png") no-repeat;
   background-position: center;
+  width: 52px;
+  height: 52px;
 }
 
 .volume__playback {
@@ -2031,7 +2019,7 @@ img {
   height: 4px;
   position: absolute;
   display: block;
-  background: url("") no-repeat;
+  background: url("../decor/scale.png") no-repeat;
 }
 
 .volume__playback-button {
