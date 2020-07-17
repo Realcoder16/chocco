@@ -6,6 +6,9 @@ const hidden = document.querySelectorAll('.menu-section__hidden');
 const imageItems = document.querySelectorAll('.menu-section__photo');
 
 
+
+
+
 document.addEventListener("DOMContentLoaded", function (event) {
   /*ПОЛУЧАЕТ ТЕКУЩУЮ ШИРИНУ ЭКРАНА*/
   var widthWind = document.querySelector('body').offsetWidth;
@@ -15,18 +18,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       imageItems[index].addEventListener('click', function (event) {
 
-        for (let k = 0; k < imageItems.length; k++) {
-          hidden[k].classList.remove('menu-section__hidden--animated')
-          hidden[k].classList.remove('menu-section__hidden--animated--close')
+        if (!hidden[index].classList.contains('menu-section__hidden--animated')) {
 
-        };
 
-        hidden[index].classList.add('menu-section__hidden--animated')
+          for (let k = 0; k < imageItems.length; k++) {
+            hidden[k].classList.remove('menu-section__hidden--animated')
+            hidden[k].classList.remove('menu-section__hidden--animated--close')
+
+          };
+
+          hidden[index].classList.add('menu-section__hidden--animated')
+
+        }
+
+        
 
       });
 
     }
-
 
     for (let j = 0; j < close.length; j++) {
 
@@ -40,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
 
 
-        
+
       });
 
     }

@@ -1,9 +1,10 @@
 const section = $(".scroll");
+
 const display = $(".maincontent");
 const footer = $(".footer");
 
 const sideMenu = $(".fixed-menu");
-const menuItems = sideMenu.find('.fixed-menu__item');
+const menuItems = sideMenu.find(".fixed-menu__item");
 
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
@@ -28,13 +29,13 @@ const resetActiveClass = (items, itemEq, activeClass) => {
 
 }
 
-const performTransition = sectionEq => {
 
+
+
+const performTransition = (sectionEq) => {
   if (inScroll) return;
-
   const transitionOver = 1000;
   const mouseInertiaOver = 300;
-
 
   inScroll = true;
   const position = countSectionPosition(sectionEq);
@@ -50,10 +51,11 @@ const performTransition = sectionEq => {
   setTimeout(() => {
     inScroll = false;
 
-    resetActiveClass(menuItems, sectionEq, 'fixed-menu__item--active');
+    resetActiveClass(menuItems, sectionEq, "fixed-menu__item--active");
 
   }, transitionOver + mouseInertiaOver);
 }
+
 
 
 const viewportScroller = () => {
@@ -88,7 +90,7 @@ const viewportScroller = () => {
 $(window).on("wheel", e => {
 
   const deltaY = e.originalEvent.deltaY;
-  const scroller =viewportScroller();
+  const scroller = viewportScroller();
 
   if (deltaY > 0) {
     scroller.next();
@@ -107,17 +109,17 @@ $(window).on("wheel", e => {
 $(window).on("keydown", e => {
   const tagName = e.target.tagName.toLowerCase();
   const UserTypingInInputs = tagName === "input" || tagName === 'textarea';
-  const roller =viewportScroller();
+  const roller = viewportScroller();
   if (UserTypingInInputs) return;
 
   switch (e.keyCode) {
     case 38: //prev
-roller.prev();
+      roller.prev();
       break;
 
     case 40: //prev
-    roller.next();
-    break;
+      roller.next();
+      break;
 
   }
 
@@ -142,7 +144,7 @@ $("[data-scroll-to]").click(e => {
 })
 
 
-$(".wrapper").on("touchmove", e =>e.preventDefault());
+$(".wrapper").on("touchmove", e => e.preventDefault());
 
 
 
@@ -150,19 +152,19 @@ $(".wrapper").on("touchmove", e =>e.preventDefault());
 
 $("body").swipe({
 
-swipe:function(
-  event,
-  direction) {
-    const scroller =viewportScroller();
-     let scrollDirection = "";
+  swipe: function (
+    event,
+    direction) {
+    const scroller = viewportScroller();
+    let scrollDirection = "";
 
-     if(direction === "up") scrollDirection = "next";
-     if(direction === "down") scrollDirection = "prev";
+    if (direction === "up") scrollDirection = "next";
+    if (direction === "down") scrollDirection = "prev";
 
-     alert(direction);
+    alert(direction);
 
-     scroller[scrollDirection]();
-    },
+    scroller[scrollDirection]();
+  },
 
-  });
+});
 

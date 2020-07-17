@@ -26,19 +26,21 @@ body.style.overflow = "visible";
 
 
 })
-for (let index = 0; index < Items.length;) {
+
+
+for (let index = 0; index < Items.length; index++) {
 
 Items[index].addEventListener('click', function (event) {
 
 
-  for (let k = 0; k < Items.length;) {
+   
 
   overlay.style.display = "none";
   body.style.overflow = "visible";
 
-};
-
 });
+
+
 
 }
 
