@@ -1,0 +1,57 @@
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  z-index: $z-fixed-menu;
+  @include tablets {
+    display:none;
+  }
+ @include phones{
+  display:none;
+}
+}
+
+
+.fixed-menu__link {
+  width: rem(16px);
+  height: rem(16px);
+  border-radius: 50%;
+  border: rem(1px) solid transparent;
+  display: block;
+  position: relative;
+
+  
+  &:before{
+    content: "";
+    display: block;
+    width: rem(6px);
+    height: rem(6px);
+    border-radius: 50%;
+    background: greenyellow;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+}
+
+.fixed-menu__item {
+  margin-bottom: rem(10px);
+
+  &--active {
+    .fixed-menu__link {
+
+      border-color: greenyellow;
+
+    }
+
+  }
+}
+
+
+.maincontent{
+height: 100%;
+transition: transform 1s;
+  will-change: transform;}  

@@ -1,0 +1,74 @@
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: rem(42px);
+
+  @include phones{
+    justify-content: center;
+    margin-bottom: rem(18px);
+  }
+}
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  margin-right: rem(28px);
+  margin-bottom: rem(10px);
+
+  &--checkbox {
+    .radio__visible {
+      border-radius: 0;
+
+
+
+      &:before {
+        background: url("../../decor/Галочка.png") center center no-repeat;
+      }
+
+    }
+  }
+
+}
+
+.radio__elem {
+  display: none;
+
+
+  &:checked ~ .radio__visible {
+    &::before {
+      display: block
+    }
+  }
+
+}
+
+
+.radio__visible {
+  width: rem(26px);
+  height: rem(26px);
+  position: relative;
+  border-radius: 50%;
+  background: white;
+
+
+  &:before {
+    content: "";
+    width: rem(14px);
+    height: rem(14px);
+    background: #365a49;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+}
+
+.radio__title {
+  color: #365a49;
+  padding-left: rem(10px);
+}

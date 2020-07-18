@@ -1,0 +1,302 @@
+.section-slider {
+  background-color: #f8faf9;
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  z-index: 10;
+
+
+  &:before {
+    content: url("../../decor/Узор\ на\ фоне.png");
+    position: absolute;
+    bottom: rem(-80px);
+    right: 0;
+
+    @include phones {
+      content: '';
+      background-image: url("../../decor/Узор\ на\ фоне.png");
+      position: absolute;
+      bottom: -20%;
+      right: -7%;
+      width: 200px;
+      height: 400px;
+      background-size: cover;
+
+
+    }
+  }
+
+  &:after {
+    content: url("../../decor/blueberries.png");
+    position: absolute;
+    bottom: rem(-70px);
+    right: 0;
+
+    @include phones {
+      content: '';
+      background-image: url("../../decor/blueberries.png");
+      position: absolute;
+      bottom: rem(-70px);
+      right: 0;
+      width: 70px;
+      height: 70px;
+      background-size: cover;
+    }
+
+    @include phonesmall {
+      display: none;
+    }
+
+    @include phones {
+      right: rem(-20px);
+    }
+
+
+  }
+
+
+
+
+}
+
+
+
+
+
+.container--slider {
+  height: 100%;
+  position: relative;
+
+
+  @include tablets {}
+
+  @include phones {}
+
+
+
+
+}
+
+.slider-window {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  margin-left: rem(16px);
+  margin-right: rem(22px);
+
+  @include phonesmall {
+    padding: 0;
+  }
+
+  @include tablets {
+    padding: 0;
+  }
+
+
+}
+
+.slider {
+
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding-right: rem(10px);
+  padding-left: rem(10px);
+
+}
+
+.right {
+  position: absolute;
+  top: 48%;
+  right: -3%;
+
+  @include phones {
+    top: 26%;
+    right: -2%;
+  }
+
+  @include tablets {
+    top: 26%;
+    right: 2%;
+  }
+}
+
+.left {
+  position: absolute;
+  top: 48%;
+  left: -3%;
+
+  @include phones {
+    top: 26%;
+    left: 0%;
+  }
+
+  @include tablets {
+    top: 26%;
+    left: 0%;
+  }
+
+}
+
+
+.slider__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  @include phones {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+}
+
+.row-left {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+@include tablets {}
+
+@include phones {}
+
+.row-right {
+  flex: 1;
+  padding-right: rem(20px);
+
+  @include tablets {}
+}
+
+
+
+
+
+
+.price__icon {
+  height: rem(30px);
+  width: rem(30px);
+}
+
+.content__item {
+  display: flex;
+
+  @include tablets {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include phones {
+    justify-content: flex;
+    align-items: center;
+  }
+}
+
+
+
+
+.title h2 {
+
+  color: #000000;
+  font-size: rem(36px);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: rem(15px);
+
+  @include tablets {
+    text-align: center;
+  }
+
+  @include phones {
+    text-align: center;
+    font-size: rem(32px);
+
+
+  }
+
+
+}
+
+
+
+
+.text p {
+  color: #666666;
+
+  @include tablets {
+
+    text-align: center;
+  }
+
+  @include phones {
+
+    text-align: center;
+  }
+
+}
+
+.content__item {
+  display: flex;
+  margin-bottom: rem(35px);
+
+
+  @include phones {
+    margin-bottom: rem(12px);
+  }
+}
+
+.energy {
+  margin-right: rem(55px);
+
+  & span {
+    color: #000000;
+    font-weight: bold;
+  }
+}
+
+
+
+.weight {
+  & span {
+    color: #000000;
+    font-weight: bold;
+  }
+}
+
+.price {
+  margin-right: rem(30px);
+  text-transform: uppercase;
+  font-size: rem(60px);
+  font-weight: 300;
+  line-height: rem(60px);
+  color: #151515;
+
+
+}
+
+
+
+.chocco-bars {
+  width: 89%;
+
+  @include tablets {
+    margin: rem(115px) 0px rem(57px) 0px;
+    margin-right: rem(10px);
+
+  }
+
+
+  @include phones {}
+}
