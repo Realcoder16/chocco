@@ -1,4 +1,6 @@
 
+(function() {
+
 
 const close = document.querySelectorAll('.close__link--menu');
 const hidden = document.querySelectorAll('.menu-section__hidden');
@@ -111,4 +113,4 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 
-
+})()

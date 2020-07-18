@@ -1,3 +1,6 @@
+(function() {
+  
+
 const openButton =document.querySelector(".hamburger");
 const closeButton=document.querySelector(".close__link");
 const body = document.body
@@ -44,3 +47,4 @@ Items[index].addEventListener('click', function (event) {
 
 }
 
+})()

@@ -1,3 +1,5 @@
+(function() {
+  
 const openButton = document.querySelector("#openOverlay");
 const successModal = createModal("Hello Arseniy");
 
@@ -55,3 +57,5 @@ function createModal(content) {
  return overlayElement;
 
 }
+
+})()

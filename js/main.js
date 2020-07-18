@@ -1,3 +1,6 @@
+(function() {
+  
+
 const left = document.querySelector(".left");
 const right = document.querySelector(".right");
 const itemsList = document.querySelector(".slider");
@@ -34,3 +37,6 @@ left.addEventListener("click", e => {
     itemsList.style.right = `${currentRight}px`;
   }
 })
+
+
+})()

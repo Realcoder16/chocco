@@ -1,3 +1,5 @@
+(function() {
+ 
 const openContent = document.querySelector(".content");
 const closeContent = document.querySelector(".content")
 openContent.addEventListener("mouseover", e => {
@@ -14,3 +16,5 @@ openContent.addEventListener("mouseover", e => {
   }
 
 });
+
+})()

@@ -1,3 +1,6 @@
+
+
+
 let player;
 const playerContainer = $('.player');
 const playerStart = $('.player__start');
@@ -133,3 +136,6 @@ function onYouTubeIframeAPIReady() {
 
 
 eventsInit();
+
+
+

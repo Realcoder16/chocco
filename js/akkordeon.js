@@ -1,3 +1,5 @@
+(function() {
+  
 const openItem = item => {
   const container = item.closest(".team__item");
 
@@ -54,3 +56,5 @@ else {
 
 });
 
+
+})()

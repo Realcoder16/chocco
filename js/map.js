@@ -1,3 +1,5 @@
+(function() {
+  
 let myMap;
 const init = () => {
  myMap = new ymaps.Map("map", {
@@ -30,3 +32,5 @@ const init = () => {
 };
  
 ymaps.ready(init);
+
+})()
