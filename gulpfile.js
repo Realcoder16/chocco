@@ -44,7 +44,7 @@ task('copy:sprite', () => {
   })
 
   task('copy:decor', () => {
-   return src('decor/*.png', '')
+   return src('decor/*.*', '')
      .pipe(dest(`${DIST_PATH}/decor`))
      .pipe(reload({ stream: true }));
   })
@@ -69,11 +69,11 @@ task('styles', () => {
      .pipe(concat('main.scss'))
      .pipe(sassGlob())
      .pipe(sass().on('error', sass.logError))
-     .pipe(px2rem())
-     .pipe(autoprefixer({
-       browsers: ['last 2 versions'],
-       cascade: false
-     }))
+     //.pipe(px2rem())
+     //.pipe(autoprefixer({
+     //  browsers: ['last 2 versions'],
+     //  cascade: false
+    // }))
      // .pipe(gcmq())
      .pipe(cleanCSS())
      .pipe(sourcemaps.write())
